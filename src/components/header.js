@@ -1,42 +1,27 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import styled from "styled-components"
+import tw from "tailwind.macro"
+import logo from "../images/isaiah-logo.png"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `#FFFFFF`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `#000000`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
+// logo
+// wrapper
+// hover effects
+// navbar: portfolio, about, contact, blog?
+
+const HeaderWrapper = styled.div`
+  display: inline-flex;
+  margin: auto 5px;
+  float: left;
+`
+
+const Header = () => (
+  <HeaderWrapper>
+    <img
+      width="125"
+      src={logo}
+      alt="MY LOGO YO LOL"
+    />
+  </HeaderWrapper>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header
