@@ -6,22 +6,22 @@ import logo from "../images/isaiah-logo.png"
 // logo
 // wrapper
 // hover effects
-// navbar: portfolio, about, contact, blog?
+// navbar: home, portfolio, about, contact, blog?
 
-const HeaderWrapper = styled.div`
+const LogoWrapper = styled.a`
   display: inline-flex;
   margin: auto 5px;
   float: left;
 `
 
 const Header = () => (
-  <HeaderWrapper>
+  <LogoWrapper href="/">
     <img
-      width="125"
+      width="75"
       src={logo}
-      alt="MY LOGO YO LOL"
-    />
-  </HeaderWrapper>
+      alt="My Logo"
+  />
+  </LogoWrapper>
 )
 
 export default Header
