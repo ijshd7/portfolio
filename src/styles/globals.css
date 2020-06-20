@@ -1,0 +1,11 @@
+/*
+  Inject Tailwind's base styles and use the Tailwind Macro to use
+  the rest of Tailwind's classes in the project
+*/
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+/* Avoid placing CSS in this file and instead use Style Components to make CSS in JS for better performance and maintainability */
