@@ -70,14 +70,12 @@ const NavigationBar = styled.nav`
 `
 
 const Header = () => (
-  <>
-    <NavigationBar>
-      <LogoWrapper>
-        <Logo />
-      </LogoWrapper>
-      <ChatButton />
-    </NavigationBar>
-  </>
+  <NavigationBar>
+    <LogoWrapper>
+      <Logo />
+    </LogoWrapper>
+    <ChatButton />
+  </NavigationBar>
 )
 
 export default Header
