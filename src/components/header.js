@@ -29,7 +29,7 @@ const Logo = createReactClass({
   },
 
   render: function () {
-    let className = this.state.hovered ? 'bg-black border-white border rounded-md' : 'border-black border rounded-md';
+    let className = this.state.hovered ? 'bg-black border-white border-4 rounded-md' : 'border-black border-4 rounded-md';
     let src = this.state.hovered ? whitelogo : logo;
     let isFocused = this.state.focused ? "true" : "false";
     let isBlurred = this.state.blurred ? "true" : "false";
@@ -49,18 +49,34 @@ const Logo = createReactClass({
 
 const ChatButton = () => (
   <button
-    className="border-black border-solid border-2 hover:border-white hover:bg-black text-black hover:text-white font-bold py-2 px-4 rounded inline-flex float-right m-10"
+    className="border-black border-solid border-2 hover:border-white hover:bg-black text-black hover:text-white font-bold py-2 px-4 rounded-full inline-flex float-right m-10"
   >
-    Let's chat
+    Let's Chat
   </button>
 )
 
+const NavigationBar = styled.nav`
+  padding: 1.2rem 0;
+  box-shadow: none;
+  z-index: auto;
+  background-color: white;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  text-rendering: auto;
+  text-size-adjust: 100%;
+`
+
 const Header = () => (
   <>
-    <LogoWrapper>
-      <Logo />
-    </LogoWrapper>
-    <ChatButton />
+    <NavigationBar>
+      <LogoWrapper>
+        <Logo />
+      </LogoWrapper>
+      <ChatButton />
+    </NavigationBar>
   </>
 )
 
