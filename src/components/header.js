@@ -7,7 +7,7 @@ const createReactClass = require('create-react-class');
 
 const LogoWrapper = styled.a`
   display: inline-flex;
-  margin: 20px 20px;
+  margin: 25px 25px;
   float: left;
 `
 
@@ -49,13 +49,13 @@ const Logo = createReactClass({
 
 const ChatButton = () => (
   <button
-    className="border-black border-solid border-2 hover:border-white hover:bg-black text-black hover:text-white font-bold py-2 px-4 rounded-full inline-flex float-right m-10"
+    className="border-black border-solid border-2 hover:border-white hover:bg-black text-black hover:text-white font-bold py-2 px-4 rounded-full inline-flex float-right mt-10 mr-12"
   >
     Let's Chat
   </button>
 )
 
-const NavigationBar = styled.nav`
+const HeaderWrapper = styled.nav`
   padding: 1.2rem 0;
   box-shadow: none;
   z-index: auto;
@@ -70,12 +70,12 @@ const NavigationBar = styled.nav`
 `
 
 const Header = () => (
-  <NavigationBar>
+  <HeaderWrapper>
     <LogoWrapper>
       <Logo />
     </LogoWrapper>
     <ChatButton />
-  </NavigationBar>
+  </HeaderWrapper>
 )
 
 export default Header

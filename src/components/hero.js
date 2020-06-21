@@ -3,10 +3,6 @@ import styled from "styled-components"
 import avatar from "../images/southParkAvatar.jpg"
 import computer from "../images/computer.png"
 
-// header/text
-// avatar placement
-// computer placement
-
 const HeroWrapper = styled.section`
     background-color: white;
     color: #0a0a0a;
@@ -30,7 +26,7 @@ const Hero = () => (
         <h1 className="text-6xl">Hi, my name is Isaiah!</h1>
         <p className="text-3xl">I like to build things</p>
         <img className="my-12 mx-auto block" src={avatar} alt="My avatar" width="150" />
-        <img className="my-12 mx-auto block" src={computer} alt="My avatar" width="50%" />
+        <img className="mt-12 mx-auto block" src={computer} alt="Computer" width="50%" />
     </HeroWrapper>
 )
 
