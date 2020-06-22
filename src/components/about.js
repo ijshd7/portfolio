@@ -3,15 +3,6 @@ import styled from "styled-components"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCode, faLaptopCode, faCoffee } from '@fortawesome/free-solid-svg-icons'
 
-// web developer,software dev, cool dude
-
-// fontawesome icons
-// technologies: html,css,js,react,gatsby,node,styled components,tailwindcss,postcss,jest, etc
-// categories: frameworks/libraries, testing, style, web apis, cross-platform
-// tools
-
-// columns, then column
-
 const Columns = styled.div`
     display: flex;
     box-sizing: border-box;
@@ -86,7 +77,7 @@ const About = () => (
                 <Header className="text-3xl">Cool Dude</Header>
                 <p>I truly enjoy meeting people from all walks of life and growing as a person</p>
                 <p className="text-xl text-blue-500 mt-8">Experiences I draw from:</p>
-                <p className="mt-2 mx-10">A career in healthcare, a burning interest in technology, and meeting people from many different walks of life</p>
+                <p className="mt-2 mx-10">A career in healthcare, a burning interest in technology, and wanting the best for every person that I meet</p>
             </Content>
         </Column>
     </Columns>
