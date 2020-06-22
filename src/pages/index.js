@@ -10,10 +10,6 @@ import Footer from "../components/footer"
 
 const IndexPage = () => (
   <>
-    <Link className="text-3xl mx-2" to="blog" >Blog</Link>
-    <Link className="text-3xl mx-2" to="resources" >Resources</Link>
-    <Link className="text-3xl mx-2" to="resume" >Resume</Link>
-    <Link className="text-3xl mx-2" to="tutorials" >Tutorials</Link>
     <Header />
     <Hero />
     <Introduction />
