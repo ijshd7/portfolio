@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import styled from "styled-components"
 import logo from "../images/isaiah-logo.png"
 import whitelogo from "../images/isaiah-logo-white.png"
@@ -80,6 +81,10 @@ const Header = () => (
     <LogoWrapper>
       <Logo />
     </LogoWrapper>
+    <Link className="text-3xl mx-2" to="blog" >Blog</Link>
+    <Link className="text-3xl mx-2" to="resources" >Resources</Link>
+    <Link className="text-3xl mx-2" to="resume" >Resume</Link>
+    <Link className="text-3xl mx-2" to="tutorials" >Tutorials</Link>
     <ChatButton />
   </HeaderWrapper>
 )
