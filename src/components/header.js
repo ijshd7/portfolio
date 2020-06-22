@@ -5,7 +5,7 @@ import whitelogo from "../images/isaiah-logo-white.png"
 
 const createReactClass = require('create-react-class');
 
-const LogoWrapper = styled.a`
+const LogoWrapper = styled.div`
   display: inline-flex;
   margin: 25px 25px;
   float: left;
@@ -21,25 +21,31 @@ const Logo = createReactClass({
   },
 
   handleHover: function () {
-    this.setState({ hovered: true, focused: true, blurred: false, });
+    this.setState({ hovered: true, });
   },
 
   handleOut: function () {
-    this.setState({ hovered: false, focused: false, blurred: true });
+    this.setState({ hovered: false, });
+  },
+
+  handleFocus: function () {
+    this.setState({ focused: true, blurred: false });
+  },
+
+  handleBlur: function () {
+    this.setState({ focused: false, blurred: true });
   },
 
   render: function () {
     let className = this.state.hovered ? 'bg-black border-white border-4 rounded-md' : 'border-black border-4 rounded-md';
     let src = this.state.hovered ? whitelogo : logo;
-    let isFocused = this.state.focused ? "true" : "false";
-    let isBlurred = this.state.blurred ? "true" : "false";
     return (
       <a 
         href="/"
         onMouseOver={this.handleHover}
         onMouseOut={this.handleOut}
-        onFocus={isFocused}
-        onBlur={isBlurred}
+        onFocus={this.handleFocus}
+        onBlur={this.handleBlur}
       >
         <img className={className} src={src} alt="Cat logo" width="75" />
       </a>
