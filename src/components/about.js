@@ -74,7 +74,7 @@ const About = () => (
                 <Header className="text-3xl">Lifelong Learner</Header>
                 <p>I love learning about the ecosystem of the web, and all the cool technologies it entails</p>
                 <p className="text-xl text-green-400 mt-8">Libraries, Frameworks, Tools:</p>
-                <p className="mt-2 mx-10">React, React Native, Gatsby, Tailwindcss, JSX, Node.js, Data Formats, REST APIs, Package Managers, SPA/PWAs, and so many more </p>
+                <p className="mt-2 mx-10">React, React Native, Gatsby, Tailwindcss, JSX, Node.js, Data Formats, REST APIs, Package Managers, SPA/PWAs, Linting, and so many more </p>
             </Content>
         </Column>
         <Column>
