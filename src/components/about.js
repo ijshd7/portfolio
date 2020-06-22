@@ -29,11 +29,6 @@ const Content = styled.div`
     text-align: center;
 `
 
-const Para = () => (
-    <p>Lorem ipsum lorem ipsum lorem ipsum</p>
-)
-
-
 const Header = styled.h1`
     font-weight: bold;
     margin-top: 1.3333em;
