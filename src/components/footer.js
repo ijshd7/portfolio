@@ -43,7 +43,7 @@ const Footer = () => (
                 className=" text-5xl mx-8 text-white hover:text-green-400 hover:bg-white rounded-full h-8 w-8"
             />
         </div>
-        <p className="text-3xl text-center text-white mt-10 font-mono antialiased">Created with love by Isaiah 2020</p>
+        <p className="text-3xl text-center text-white mt-10 pb-4 font-mono antialiased">Created with love by Isaiah 2020</p>
     </FooterWrapper>
 )
 
