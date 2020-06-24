@@ -56,7 +56,7 @@ const Logo = createReactClass({
 
 const ChatButton = () => (
   <button
-    className="border-black border-solid border-2 hover:border-white hover:bg-black text-black hover:text-white font-bold py-2 px-4 rounded-full inline-flex float-right mt-10 mr-12"
+    className="border-black border-solid border-2 hover:border-white hover:bg-black text-black hover:text-white font-bold py-2 px-4 rounded-full inline-flex float-right mr-12"
   >
     Let's Chat
   </button>
@@ -81,10 +81,12 @@ const Header = () => (
     <LogoWrapper>
       <Logo />
     </LogoWrapper>
-    <Link className="text-3xl mx-2" to="blog" >Blog</Link>
-    <Link className="text-3xl mx-2" to="resources" >Resources</Link>
-    <Link className="text-3xl mx-2" to="resume" >Resume</Link>
-    <Link className="text-3xl mx-2" to="tutorials" >Tutorials</Link>
+    <div className="text-center">
+      <Link className="text-3xl mx-2" to="blog" >Blog</Link>
+      <Link className="text-3xl mx-2" to="resources" >Resources</Link>
+      <Link className="text-3xl mx-2" to="resume" >Resume</Link>
+      <Link className="text-3xl mx-2" to="tutorials" >Tutorials</Link>
+    </div>
     <ChatButton />
   </HeaderWrapper>
 )

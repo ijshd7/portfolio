@@ -1,6 +1,6 @@
 {
   "name": "isaiah-sherrill-portfolio",
-  "private": true,
+  "private": false,
   "description": "My Portfolio Website",
   "version": "1.0.0",
   "author": "Isaiah Sherrill",
