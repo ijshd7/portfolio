@@ -32,7 +32,7 @@ const Logo = createReactClass({
   },
 
   render: function () {
-    let className = this.state.hovered ? 'bg-black border-white border-4 rounded-md' : 'border-black border-4 rounded-md';
+    let className = this.state.hovered ? 'bg-black border-white border-4 rounded-md w-1 h-auto' : 'border-black border-4 rounded-md w-1 h-auto';
     let src = this.state.hovered ? whitelogo : logo;
     return (
       <a 
@@ -43,7 +43,7 @@ const Logo = createReactClass({
         onBlur={this.handleBlur}
       >
         <span className="inline-flex">
-          <img className={className} src={src} alt="Cat logo" width="75" />
+          <img className={className} src={src} alt="Cat logo" />
         </span>
       </a>
     )
