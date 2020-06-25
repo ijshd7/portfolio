@@ -42,7 +42,9 @@ const Logo = createReactClass({
         onFocus={this.handleFocus}
         onBlur={this.handleBlur}
       >
-        <img className={className} src={src} alt="Cat logo" width="75" />
+        <span className="inline-flex">
+          <img className={className} src={src} alt="Cat logo" width="75" />
+        </span>
       </a>
     )
   }
@@ -78,13 +80,13 @@ function Grid(props) {
     return (
         <div>
             <Row>
-                <Column className="mt-3" span="3">
+                <Column className="mt-3 text-center" span="3">
                   <Logo />
                 </Column>
                 <Column className="mt-3" span="6">
                   <Links />
                 </Column>
-                <Column className="mt-3" span="3">
+                <Column className="mt-3 text-center" span="3">
                   <ChatButton />
                 </Column>
             </Row>
