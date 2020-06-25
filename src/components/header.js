@@ -102,7 +102,6 @@ const ChatButton = () => (
   </button>
 )
 
-
 const Header = () => (
     <HeaderGrid />
 )
