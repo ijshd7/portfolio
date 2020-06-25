@@ -35,7 +35,7 @@ const Logo = createReactClass({
     let className = this.state.hovered ? 'bg-black border-white border-4 rounded-md w-16 h-auto' : 'border-black border-4 rounded-md w-16 h-auto';
     let src = this.state.hovered ? whitelogo : logo;
     return (
-      <a 
+      <Link
         href="/"
         onMouseOver={this.handleHover}
         onMouseOut={this.handleOut}
@@ -45,7 +45,7 @@ const Logo = createReactClass({
         <span className="inline-flex">
           <img className={className} src={src} alt="Cat logo" />
         </span>
-      </a>
+      </Link>
     )
   }
 })

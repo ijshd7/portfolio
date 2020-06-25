@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { Link } from "gatsby"
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -16,9 +17,9 @@ const FooterWrapper = styled.div`
 
 const Logo = () => (
     <div className="text-center pt-10 mb-10">
-        <a href="/">
+        <Link href="/">
             <img className="inline-block mr-auto ml-auto" src={logo} alt="Cat logo" width="100"/>
-        </a>
+        </Link>
     </div>
 )
 
