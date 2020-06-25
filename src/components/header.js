@@ -76,7 +76,7 @@ const Column = styled.div`
     }
 `
 
-function Grid(props) {
+function HeaderGrid(props) {
     return (
         <div>
             <Row>
@@ -104,7 +104,7 @@ const ChatButton = () => (
 
 
 const Header = () => (
-    <Grid />
+    <HeaderGrid />
 )
 
 export default Header
