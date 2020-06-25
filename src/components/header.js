@@ -80,13 +80,13 @@ function Grid(props) {
     return (
         <div>
             <Row>
-                <Column className="mt-3 text-center" span="3">
+                <Column className="mt-4 text-center" span="3">
                   <Logo />
                 </Column>
-                <Column className="mt-3" span="6">
+                <Column className="mt-4 text-center" span="6">
                   <Links />
                 </Column>
-                <Column className="mt-3 text-center" span="3">
+                <Column className="mt-4 text-center" span="3">
                   <ChatButton />
                 </Column>
             </Row>
