@@ -32,7 +32,7 @@ const Logo = createReactClass({
   },
 
   render: function () {
-    let className = this.state.hovered ? 'bg-black border-white border-4 rounded-md w-1 h-auto' : 'border-black border-4 rounded-md w-1 h-auto';
+    let className = this.state.hovered ? 'bg-black border-white border-4 rounded-md w-16 h-auto' : 'border-black border-4 rounded-md w-16 h-auto';
     let src = this.state.hovered ? whitelogo : logo;
     return (
       <a 
@@ -52,9 +52,9 @@ const Logo = createReactClass({
 
 const Links = () => (
   <>
+    <Link className="text-3xl mx-2" to="resume" >Resume</Link>
     <Link className="text-3xl mx-2" to="blog" >Blog</Link>
     <Link className="text-3xl mx-2" to="resources" >Resources</Link>
-    <Link className="text-3xl mx-2" to="resume" >Resume</Link>
     <Link className="text-3xl mx-2" to="tutorials" >Tutorials</Link>
   </>
 )
