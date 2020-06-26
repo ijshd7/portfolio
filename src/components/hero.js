@@ -6,7 +6,7 @@ import computer from "../images/computer.png"
 const HeroWrapper = styled.section`
     background-color: white;
     color: #0a0a0a;
-    padding-top: 12rem;
+    padding-top: 8rem;
     align-items: stretch;
     display: flex;
     border: 0;
@@ -23,8 +23,8 @@ const HeroWrapper = styled.section`
 
 const Hero = () => (
     <HeroWrapper>
-        <h1 className="text-6xl">Hi, my name is Isaiah!</h1>
-        <p className="text-3xl">I like to build things</p>
+        <h1 style={{fontSize: "8vh"}}>Hi, my name is Isaiah!</h1>
+        <p style={{fontSize: "4vh"}}>I like to build things</p>
         <img className="my-12 mx-auto block" src={avatar} alt="My avatar" width="150" />
         <img className="mt-12 mx-auto block" src={computer} alt="Computer" width="50%" />
     </HeroWrapper>
