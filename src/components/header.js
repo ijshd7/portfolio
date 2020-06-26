@@ -52,10 +52,10 @@ const Logo = createReactClass({
 
 const Links = () => (
   <>
-    <Link className="text-3xl mx-2" to="resume" >Resume</Link>
-    <Link className="text-3xl mx-2" to="blog" >Blog</Link>
-    <Link className="text-3xl mx-2" to="resources" >Resources</Link>
-    <Link className="text-3xl mx-2" to="tutorials" >Tutorials</Link>
+    <Link style={{fontSize: "4vh"}} className="mx-2" to="resume" >Resume</Link>
+    <Link style={{fontSize: "4vh"}} className="mx-2" to="blog" >Blog</Link>
+    <Link style={{fontSize: "4vh"}} className="mx-2" to="resources" >Resources</Link>
+    <Link style={{fontSize: "4vh"}} className="mx-2" to="tutorials" >Tutorials</Link>
   </>
 )
 
