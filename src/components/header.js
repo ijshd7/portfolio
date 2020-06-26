@@ -67,12 +67,27 @@ const Row = styled.div`
     }
 `
 
+function getWidthString(span) {
+  if (!span) return;
+
+  let width = span / 12 * 100;
+  return `width: ${width}%;`;
+}
+
 const Column = styled.div`
     float: left;
-    width: 100%;
+    ${({ xs }) => (xs ? getWidthString(xs) : "width: 100%")};
 
     @media only screen and (min-width: 768px) {
-        width: ${props => (props.span ? props.span / 12 * 100 : "8.33")}%;
+      ${({ sm }) => sm && getWidthString(sm)};
+    }
+
+    @media only screen and (min-width: 992px) {
+      ${({ md }) => md && getWidthString(md)};
+    }
+
+    @media only screen and (min-width: 1200px) {
+      ${({ lg }) => lg && getWidthString(lg)};
     }
 `
 
@@ -80,13 +95,13 @@ function HeaderGrid(props) {
     return (
         <div>
             <Row>
-                <Column className="mt-4 text-center" span="3">
+                <Column xs="12" sm="4" md="6" lg="3" className="mt-4 text-center">
                   <Logo />
                 </Column>
-                <Column className="mt-4 text-center" span="6">
+                <Column xs="12" sm="4" md="6" lg="6" className="mt-4 text-center">
                   <Links />
                 </Column>
-                <Column className="mt-4 text-center" span="3">
+                <Column xs="12" sm="4" md="6" lg="3" className="mt-4 text-center">
                   <ChatButton />
                 </Column>
             </Row>
