@@ -4,7 +4,9 @@ import styled from "styled-components"
 const IntroWrapper = styled.div`
     background: linear-gradient(45deg, #11A49B, #90FC8E);
     display: flex;
-    height: 100%;
+    margin: 0;
+    position: relative;
+    height: auto;
     width: 100%;
 `
 
