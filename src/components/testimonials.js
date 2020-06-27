@@ -14,8 +14,8 @@ const TestimonialWrapper = styled.section`
 
 const Testimonials = () => (
     <TestimonialWrapper>
-        <div className="p-16 text-center text-white font-mono antialiased">
-            <h1 style={{fontSize: "8vh"}} className="mb-8 ">TESTIMONIALS</h1>
+        <div className="my-16 text-center text-white font-mono antialiased">
+            <h1 style={{fontSize: "7vh"}} className="mb-8 ">TESTIMONIALS</h1>
             <p style={{fontSize: "6vh"}} className="mt-auto">Coming Soon...</p>
         </div>
     </TestimonialWrapper>
