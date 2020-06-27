@@ -17,7 +17,7 @@ const FooterWrapper = styled.div`
 
 const Logo = () => (
     <div className="text-center pt-10 mb-10">
-        <Link href="/">
+        <Link to="/">
             <img className="inline-block mr-auto ml-auto" src={logo} alt="Cat logo" width="100"/>
         </Link>
     </div>

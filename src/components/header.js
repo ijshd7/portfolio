@@ -36,7 +36,7 @@ const Logo = createReactClass({
     let src = this.state.hovered ? whitelogo : logo;
     return (
       <Link
-        href="/"
+        to="/"
         onMouseOver={this.handleHover}
         onMouseOut={this.handleOut}
         onFocus={this.handleFocus}
