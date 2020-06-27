@@ -3,6 +3,8 @@ import styled from "styled-components"
 
 const TestimonialWrapper = styled.section`
     background-color: black;
+    background-repeat: no-repeat;
+    background-position: center top;
     background-size: contain;
     display: inline-block;
     position: relative;
