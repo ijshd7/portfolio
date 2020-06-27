@@ -39,7 +39,7 @@ function AboutGrid(props) {
     return (
         <div className="font-mono antialiased">
             <Row>
-                <Column xs="12" sm="4" md="6" lg="3" className="mt-4 text-center">
+                <Column xs="12" sm="4" md="6" lg="3" className="my-4 text-center">
                     <FontAwesomeIcon
                         icon={faCode}
                         className="text-red-500 hover:text-red-300 mt-4"
@@ -51,7 +51,7 @@ function AboutGrid(props) {
                     <p style={{fontSize: "3vh"}} className="text-red-500 mt-2">Core Technologies:</p>
                     <p style={{fontSize: "2vh"}} className="mt-2 mx-10">HTML, CSS, URLs, HTTP, JavaScript, JSON, DOM, Web APIs, WCAG, and ARIA</p>
                 </Column>
-                <Column xs="12" sm="4" md="6" lg="6" className="mt-4 text-center">
+                <Column xs="12" sm="4" md="6" lg="6" className="my-4 text-center">
                     <FontAwesomeIcon
                         icon={faLaptopCode}
                         className="text-green-400 hover:text-green-300 mt-4"
@@ -63,7 +63,7 @@ function AboutGrid(props) {
                     <p style={{fontSize: "3vh"}} className="text-green-400 mt-2">Libraries, Frameworks, Tools:</p>
                     <p style={{fontSize: "2vh"}} className="mt-2 mx-10">React, React Native, Gatsby, Tailwindcss, JSX, Node.js, Data Formats, REST APIs, Package Managers, SPA/PWAs, Linting, and so many more </p>
                 </Column>
-                <Column xs="12" sm="4" md="6" lg="3" className="mt-4 text-center">
+                <Column xs="12" sm="4" md="6" lg="3" className="my-4 text-center">
                     <FontAwesomeIcon
                         icon={faCoffee}
                         className="text-blue-500 hover:text-blue-300 mt-4"
