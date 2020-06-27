@@ -32,7 +32,7 @@ const Footer = () => (
         <div>
             <a
                 href="https://github.com/ijshd7"
-                target="_blank" 
+                target="_blank"
                 rel="noreferrer"
             >
                 <FontAwesomeIcon
@@ -42,7 +42,7 @@ const Footer = () => (
             </a>
             <a
                 href="https://www.linkedin.com/in/isaiah-sherrill-ab58b970"
-                target="_blank" 
+                target="_blank"
                 rel="noreferrer"
             >
                 <FontAwesomeIcon
@@ -62,7 +62,7 @@ const Footer = () => (
             </a>
             <a
                 href="mailto:ijshd7@mail.missouri.edu"
-                target="_blank" 
+                target="_blank"
                 rel="noreferrer"
             >
                 <FontAwesomeIcon
