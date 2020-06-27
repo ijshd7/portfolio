@@ -111,7 +111,7 @@ function HeaderGrid(props) {
 
 const ChatButton = () => (
   <button
-    className="border-black border-solid border-2 hover:border-white hover:bg-black text-black hover:text-white font-bold py-2 px-4 rounded-full"
+    className="border-black border-solid border-2 hover:bg-black text-black hover:text-white font-bold py-2 px-4 rounded-full"
   >
     <a href="mailto:ijshd7@mail.missouri.edu" target="_blank" rel="noreferrer">
       Let's Chat

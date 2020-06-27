@@ -16,7 +16,7 @@ const ProjectsWrapper = styled.section`
 
 const Projects = () => (
     <ProjectsWrapper>
-        <div className="p-16 text-center text-white font-mono antialiased">
+        <div className="my-16 text-center text-white font-mono antialiased">
             <h1 style={{fontSize: "8vh"}} className="mb-8 ">PROJECTS</h1>
             <p style={{fontSize: "6vh"}} className="mt-auto">Coming Soon...</p>
         </div>
