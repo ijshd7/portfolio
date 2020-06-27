@@ -3,11 +3,6 @@ import styled from "styled-components"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCode, faLaptopCode, faCoffee } from '@fortawesome/free-solid-svg-icons'
 
-// make container responsive with grid
-// text responsive
-// icons responsive
-// clean up some text
-
 const Row = styled.div`
     &::after {
         content: "";
