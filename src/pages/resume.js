@@ -1,15 +1,11 @@
 import React from "react"
-import { Link } from "gatsby"
+import Layout from "../components/layout"
 import ComingSoon from "../components/comingSoon"
 
-const Resume = () => (
-    <>
-        <Link className="text-3xl mx-2" to="/" >Home</Link>
-        <Link className="text-3xl mx-2" to="/blog" >Blog</Link>
-        <Link className="text-3xl mx-2" to="/resources" >Resources</Link>
-        <Link className="text-3xl mx-2" to="/tutorials" >Tutorials</Link>
-        <ComingSoon />
-    </>
-)
-
-export default Resume
+export default function ResumePage() {
+    return (
+        <Layout>
+            <ComingSoon />
+        </Layout>
+    );
+}
