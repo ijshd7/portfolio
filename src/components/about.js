@@ -58,7 +58,7 @@ function AboutGrid(props) {
                         style={{fontSize: "8vh"}}
                     />
                     <h1 className="mt-4" style={{fontSize: "3vh"}}>Lifelong Learner</h1>
-                    <p className="mt-2" style={{fontSize: "2vh"}}>I love learning about the ecosystem of the web, and all the cool technologies it entails</p>
+                    <p className="mt-2 mx-4" style={{fontSize: "2vh"}}>I love learning about the ecosystem of the web, and all the cool technologies it entails</p>
                     <br />
                     <p style={{fontSize: "3vh"}} className="text-green-400 mt-2">Libraries, Frameworks, Tools:</p>
                     <p style={{fontSize: "2vh"}} className="mt-2 mx-10">React, React Native, Gatsby, Tailwindcss, JSX, Node.js, Data Formats, REST APIs, Package Managers, SPA/PWAs, Linting, and so many more </p>
