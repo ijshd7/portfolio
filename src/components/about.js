@@ -3,6 +3,11 @@ import styled from "styled-components"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCode, faLaptopCode, faCoffee } from '@fortawesome/free-solid-svg-icons'
 
+// make container responsive with grid
+// text responsive
+// icons responsive
+// clean up some text
+
 const Columns = styled.div`
     display: flex;
     box-sizing: border-box;
@@ -34,7 +39,6 @@ const Header = styled.h1`
     margin-top: 1.3333em;
     margin-bottom: .6666em;
 `
-
 
 const About = () => (
     <Columns className="font-mono antialiased">

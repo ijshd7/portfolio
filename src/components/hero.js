@@ -24,7 +24,7 @@ const HeroWrapper = styled.section`
 const Hero = () => (
     <HeroWrapper>
         <h1 style={{fontSize: "8vh"}}>Hi, my name is Isaiah!</h1>
-        <p className="mt-2" style={{fontSize: "4vh"}}>I build things</p>
+        <p className="mt-2" style={{fontSize: "5vh"}}>I build things</p>
         <img className="my-12 mx-auto block" src={avatar} alt="My avatar" width="150" />
         <img className="mt-12 mx-auto block" src={computer} alt="Computer" width="50%" />
     </HeroWrapper>

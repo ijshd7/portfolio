@@ -12,6 +12,7 @@ const IndexPage = () => (
     <Header />
     <Hero />
     <Introduction />
+    <About />
   </>
 )
 
