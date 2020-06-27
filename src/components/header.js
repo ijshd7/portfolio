@@ -95,13 +95,13 @@ function HeaderGrid(props) {
     return (
         <div>
             <Row>
-                <Column xs="12" sm="4" md="6" lg="3" className="mt-4 text-center">
+                <Column xs="12" sm="4" md="4" lg="3" className="mt-4 text-center">
                   <Logo />
                 </Column>
-                <Column xs="12" sm="4" md="6" lg="6" className="mt-4 text-center">
+                <Column xs="12" sm="4" md="4" lg="6" className="mt-4 text-center">
                   <Links />
                 </Column>
-                <Column xs="12" sm="4" md="6" lg="3" className="mt-4 text-center">
+                <Column xs="12" sm="4" md="4" lg="3" className="mt-4 text-center">
                   <ChatButton />
                 </Column>
             </Row>
