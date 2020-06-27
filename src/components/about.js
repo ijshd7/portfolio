@@ -76,7 +76,7 @@ const About = () => (
                 <Header className="text-3xl">Cool Dude</Header>
                 <p>I truly enjoy meeting people from all walks of life and growing as a person</p>
                 <p className="text-xl text-blue-500 mt-8">Experiences I draw from:</p>
-                <p className="mt-2 mx-10">A career in healthcare, a burning interest in technology, and wanting the best for every person that I meet</p>
+                <p className="mt-2 mx-10">A career in healthcare, a passion for understanding what makes things the way that they are, and a burning interest in technology</p>
             </Content>
         </Column>
     </Columns>
