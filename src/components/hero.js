@@ -6,7 +6,7 @@ import computer from "../images/computer.png"
 const HeroWrapper = styled.section`
     background-color: white;
     color: #0a0a0a;
-    padding-top: 8rem;
+    padding-top: 4rem;
     align-items: stretch;
     display: flex;
     border: 0;

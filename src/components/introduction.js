@@ -12,8 +12,8 @@ const IntroWrapper = styled.div`
 
 const Text = () => (
     <div className="text-center text-white p-16">
-        <h1 style={{fontSize: "8vh"}} className="mb-10">Nice to meet you.</h1>
-        <p className="text-base inline-block m-auto pt-4 px-64">
+        <h1 style={{fontSize: "8vh"}} className="mb-8">Nice to meet you.</h1>
+        <p style={{fontSize: "3vh"}} className="m-auto pt-4">
             A few years ago I started delving into the world of web development and never looked back. I've learned so much and met so many awesome people, and I look forward to working with you. If you already know me, what do you think of my site? And if you don't know me, here is what I do
         </p>
     </div>
