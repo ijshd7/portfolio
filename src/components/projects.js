@@ -6,22 +6,20 @@ import styled from "styled-components"
 // carousel
 
 const ProjectsWrapper = styled.section`
-    background: linear-gradient(45deg, #11A49B, #90FC8E);
-    height: 100%;
+    background: linear-gradient(45deg, #11A49B, #90FC8E) no-repeat center top;
+    background-size: contain;
+    display: inline-block;
+    position: relative;
+    height: auto;
     width: 100%;
-    padding: 3rem 1.5rem;
-`
-
-const Header = styled.h1`
-    color: white;
-    font-size: 2.5rem;
-    text-align: center;
 `
 
 const Projects = () => (
     <ProjectsWrapper>
-        <Header>PROJECTS</Header>
-        <p className="text-3xl text-center text-white mt-10 font-mono antialiased">Coming Soon...</p>
+        <div className="p-16 text-center text-white font-mono antialiased">
+            <h1 style={{fontSize: "8vh"}} className="mb-8 ">PROJECTS</h1>
+            <p style={{fontSize: "6vh"}} className="mt-auto">Coming Soon...</p>
+        </div>
     </ProjectsWrapper>
 )
 
