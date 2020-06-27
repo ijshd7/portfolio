@@ -2,24 +2,22 @@ import React from "react"
 import styled from "styled-components"
 
 const TestimonialWrapper = styled.section`
-    max-height: 919.95px;
-    max-width: 1435px;
-    padding: 3rem 1.5rem;
-    display: block;
     background-color: black;
-`
-
-const Header = styled.h1`
-    color: white;
-    font-size: 2.5rem;
-    text-align: center;
+    background-size: contain;
+    display: inline-block;
+    position: relative;
+    height: auto;
+    width: 100%;
 `
 
 const Testimonials = () => (
     <TestimonialWrapper>
-        <Header>TESTIMONIALS</Header>
-        <p className="text-3xl text-center text-white mt-10 font-mono antialiased">Coming Soon...</p>
+        <div className="p-16 text-center text-white font-mono antialiased">
+            <h1 style={{fontSize: "8vh"}} className="mb-8 ">TESTIMONIALS</h1>
+            <p style={{fontSize: "6vh"}} className="mt-auto">Coming Soon...</p>
+        </div>
     </TestimonialWrapper>
 )
+
 
 export default Testimonials
