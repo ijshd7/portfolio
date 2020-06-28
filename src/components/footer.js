@@ -21,15 +21,13 @@ const FooterWrapper = styled.div`
 
 const Logo = () => (
     <Link to="/">
-        <span className="inline-flex">
-            <img className="mx-8 w-8 h-8" src={logo} alt="Cat logo" />
-        </span>
+        <img className="mx-8 w-8 h-8" src={logo} alt="Cat logo" />
     </Link>
 )
 
 const Footer = () => (
     <FooterWrapper className="py-4">
-        <div>
+        <div className="inline-flex">
             <a
                 href="https://github.com/ijshd7"
                 target="_blank"
