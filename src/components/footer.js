@@ -20,7 +20,7 @@ const FooterWrapper = styled.div`
 `
 
 const Logo = () => (
-    <Link to="/">
+    <Link className="flex items-center justify-center" to="/">
         <img className="mx-6 w-8 h-8" src={logo} alt="Cat logo" />
     </Link>
 )
@@ -28,47 +28,61 @@ const Logo = () => (
 const Footer = () => (
     <FooterWrapper className="py-4">
         <div className="inline-flex">
-            <a
-                href="https://github.com/ijshd7"
-                target="_blank"
-                rel="noreferrer"
-            >
-                <FontAwesomeIcon
-                    icon={['fab', 'github']}
-                    className="mx-6 text-white h-8 w-8"
-                />
-            </a>
-            <a
-                href="https://www.linkedin.com/in/isaiah-sherrill-ab58b970"
-                target="_blank"
-                rel="noreferrer"
-            >
-                <FontAwesomeIcon
-                    icon={['fab', 'linkedin-in']}
-                    className="mx-6 text-white h-8 w-8"
-                />
-            </a>
-            <a
-                href="https://codepen.io/ijshd7"
-                target="_blank"
-                rel="noreferrer"
-            >
-                <FontAwesomeIcon
-                    icon={['fab', 'codepen']}
-                    className="mx-6 text-white h-8 w-8"
-                />
-            </a>
-            <a
-                href="mailto:ijshd7@mail.missouri.edu"
-                target="_blank"
-                rel="noreferrer"
-            >
-                <FontAwesomeIcon
-                    icon="envelope"
-                    className="mx-6 text-white h-8 w-8"
-                />
-            </a>
+            <div class="mx-2 rounded-full h-16 w-16 flex items-center justify-center border border-white text-white hover:bg-white hover:text-green-400">
+                <a
+                    href="https://github.com/ijshd7"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    <FontAwesomeIcon
+                        icon={['fab', 'github']}
+                        className="mx-6 h-auto w-auto"
+                        style={{fontSize: "3.5vh"}}
+                    />
+                </a>
+            </div>
+            <div class=" mx-2 rounded-full h-16 w-16 flex items-center justify-center border border-white text-white hover:bg-white hover:text-green-400">
+                <a
+                    href="https://www.linkedin.com/in/isaiah-sherrill-ab58b970"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    <FontAwesomeIcon
+                        icon={['fab', 'linkedin-in']}
+                        className="mx-6 h-auto w-auto"
+                        style={{fontSize: "3.5vh"}}
+                    />
+                </a>
+            </div>
+            <div class="mx-2 rounded-full h-16 w-16 flex items-center justify-center border border-white text-white hover:bg-white hover:text-green-400">
+                <a
+                    href="https://codepen.io/ijshd7"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    <FontAwesomeIcon
+                        icon={['fab', 'codepen']}
+                        className="mx-6 h-auto w-auto"
+                        style={{fontSize: "3.5vh"}}
+                    />
+                </a>
+            </div>
+            <div class="mx-2 rounded-full h-16 w-16 flex items-center justify-center border border-white text-white hover:bg-white hover:text-green-400">
+                <a
+                    href="mailto:ijshd7@mail.missouri.edu"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    <FontAwesomeIcon
+                        icon="envelope"
+                        className="mx-6 h-auto w-auto"
+                        style={{fontSize: "3.5vh"}}
+                    />
+                </a>
+            </div>
+        <div class="mx-2 rounded-full h-16 w-16 flex items-center justify-center border border-white">
             <Logo />
+        </div>
         </div>
         <p 
             style={{fontSize: "4vh"}}
