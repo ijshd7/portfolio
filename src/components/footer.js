@@ -28,7 +28,7 @@ const Logo = () => (
 const Footer = () => (
     <FooterWrapper className="py-4">
         <div className="inline-flex">
-            <div class="mx-2 rounded-full h-16 w-16 flex items-center justify-center border border-white text-white hover:bg-white hover:text-green-400">
+            <div class="mx-2 rounded-full h-12 w-12 flex items-center justify-center border border-white text-white hover:bg-white hover:text-green-400">
                 <a
                     href="https://github.com/ijshd7"
                     target="_blank"
@@ -36,12 +36,12 @@ const Footer = () => (
                 >
                     <FontAwesomeIcon
                         icon={['fab', 'github']}
-                        className="mx-6 h-auto w-auto"
-                        style={{fontSize: "3.5vh"}}
+                        className="h-auto w-auto"
+                        style={{fontSize: "3vh"}}
                     />
                 </a>
             </div>
-            <div class=" mx-2 rounded-full h-16 w-16 flex items-center justify-center border border-white text-white hover:bg-white hover:text-green-400">
+            <div class=" mx-2 rounded-full h-12 w-12 flex items-center justify-center border border-white text-white hover:bg-white hover:text-green-400">
                 <a
                     href="https://www.linkedin.com/in/isaiah-sherrill-ab58b970"
                     target="_blank"
@@ -49,12 +49,12 @@ const Footer = () => (
                 >
                     <FontAwesomeIcon
                         icon={['fab', 'linkedin-in']}
-                        className="mx-6 h-auto w-auto"
-                        style={{fontSize: "3.5vh"}}
+                        className="h-auto w-auto"
+                        style={{fontSize: "3vh"}}
                     />
                 </a>
             </div>
-            <div class="mx-2 rounded-full h-16 w-16 flex items-center justify-center border border-white text-white hover:bg-white hover:text-green-400">
+            <div class="mx-2 rounded-full h-12 w-12 flex items-center justify-center border border-white text-white hover:bg-white hover:text-green-400">
                 <a
                     href="https://codepen.io/ijshd7"
                     target="_blank"
@@ -62,12 +62,12 @@ const Footer = () => (
                 >
                     <FontAwesomeIcon
                         icon={['fab', 'codepen']}
-                        className="mx-6 h-auto w-auto"
-                        style={{fontSize: "3.5vh"}}
+                        className="h-auto w-auto"
+                        style={{fontSize: "3vh"}}
                     />
                 </a>
             </div>
-            <div class="mx-2 rounded-full h-16 w-16 flex items-center justify-center border border-white text-white hover:bg-white hover:text-green-400">
+            <div class="mx-2 rounded-full h-12 w-12 flex items-center justify-center border border-white text-white hover:bg-white hover:text-green-400">
                 <a
                     href="mailto:ijshd7@mail.missouri.edu"
                     target="_blank"
@@ -75,12 +75,12 @@ const Footer = () => (
                 >
                     <FontAwesomeIcon
                         icon="envelope"
-                        className="mx-6 h-auto w-auto"
-                        style={{fontSize: "3.5vh"}}
+                        className="h-auto w-auto"
+                        style={{fontSize: "3vh"}}
                     />
                 </a>
             </div>
-        <div class="mx-2 rounded-full h-16 w-16 flex items-center justify-center border border-white">
+        <div class="mx-2 h-12 w-12 flex items-center justify-center">
             <Logo />
         </div>
         </div>
