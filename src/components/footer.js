@@ -21,7 +21,7 @@ const FooterWrapper = styled.div`
 
 const Logo = () => (
     <Link to="/">
-        <img className="mx-8 w-8 h-8" src={logo} alt="Cat logo" />
+        <img className="mx-6 w-8 h-8" src={logo} alt="Cat logo" />
     </Link>
 )
 
@@ -35,7 +35,7 @@ const Footer = () => (
             >
                 <FontAwesomeIcon
                     icon={['fab', 'github']}
-                    className="mx-8 text-white h-8 w-8"
+                    className="mx-6 text-white h-8 w-8"
                 />
             </a>
             <a
@@ -45,7 +45,7 @@ const Footer = () => (
             >
                 <FontAwesomeIcon
                     icon={['fab', 'linkedin-in']}
-                    className="mx-8 text-white h-8 w-8"
+                    className="mx-6 text-white h-8 w-8"
                 />
             </a>
             <a
@@ -55,7 +55,7 @@ const Footer = () => (
             >
                 <FontAwesomeIcon
                     icon={['fab', 'codepen']}
-                    className="mx-8 text-white h-8 w-8"
+                    className="mx-6 text-white h-8 w-8"
                 />
             </a>
             <a
@@ -65,7 +65,7 @@ const Footer = () => (
             >
                 <FontAwesomeIcon
                     icon="envelope"
-                    className="mx-8 text-white h-8 w-8"
+                    className="mx-6 text-white h-8 w-8"
                 />
             </a>
             <Logo />
