@@ -41,7 +41,7 @@ const Footer = () => (
                     />
                 </a>
             </div>
-            <div class=" mx-2 rounded-full h-12 w-12 flex items-center justify-center border border-white text-white hover:bg-white hover:text-green-400">
+            <div className=" mx-2 rounded-full h-12 w-12 flex items-center justify-center border border-white text-white hover:bg-white hover:text-green-400">
                 <a
                     href="https://www.linkedin.com/in/isaiah-sherrill-ab58b970"
                     target="_blank"
@@ -54,7 +54,7 @@ const Footer = () => (
                     />
                 </a>
             </div>
-            <div class="mx-2 rounded-full h-12 w-12 flex items-center justify-center border border-white text-white hover:bg-white hover:text-green-400">
+            <div className="mx-2 rounded-full h-12 w-12 flex items-center justify-center border border-white text-white hover:bg-white hover:text-green-400">
                 <a
                     href="https://codepen.io/ijshd7"
                     target="_blank"
@@ -67,7 +67,7 @@ const Footer = () => (
                     />
                 </a>
             </div>
-            <div class="mx-2 rounded-full h-12 w-12 flex items-center justify-center border border-white text-white hover:bg-white hover:text-green-400">
+            <div className="mx-2 rounded-full h-12 w-12 flex items-center justify-center border border-white text-white hover:bg-white hover:text-green-400">
                 <a
                     href="mailto:ijshd7@mail.missouri.edu"
                     target="_blank"
@@ -80,7 +80,7 @@ const Footer = () => (
                     />
                 </a>
             </div>
-        <div class="mx-2 h-12 w-12 flex items-center justify-center">
+        <div className="mx-2 h-12 w-12 flex items-center justify-center">
             <Logo />
         </div>
         </div>
