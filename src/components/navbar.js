@@ -193,6 +193,21 @@ function DropdownMenu() {
   const IconRightSpan = styled.span`
     margin-left: auto;
   `
+  const DropDownDiv = styled.div`
+    position: absolute;
+    top: 58px;
+    width: 300px;
+    transform: translateX(-45%);
+    background-color: var(--bg);
+    border: var(--border);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    overflow: hidden;
+    transition: height var(--speed) ease;
+  `
+  const Menu = styled.div`
+    width: 100%;
+  `
 
   return (
     <div className="dropdown" style={{ height: menuHeight }} ref={dropdownRef}>
