@@ -49,6 +49,12 @@ const GlobalStyles = createGlobalStyle`
     color: var(--text-color);
     text-decoration: none;
   }
+
+  svg { 
+    fill: var(--text-color);
+    width: 20px;
+    height: 20px;
+  }
 `
 
 const App = () => (
@@ -89,19 +95,44 @@ const NavNav = styled.ul`
   justify-content: flex-end;
 `
 
-function NavItem(props) {
+const NavItem = (props) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <li className="nav-item">
-      <a href="#" className="icon-button" onClick={() => setOpen(!open)}>
+    <NavItemLi>
+      <IconButtonA href="#" onClick={() => setOpen(!open)}>
         {props.icon}
-      </a>
+      </IconButtonA>
 
       {open && props.children}
-    </li>
+    </NavItemLi>
   );
 }
+
+const NavItemLi = styled.li`
+    width: calc(var(--nav-size) * 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`
+
+const IconButtonA = styled.a`
+    --button-size: calc(var(--nav-size) * 0.5);
+    width: var(--button-size);
+    height: var(--button-size);
+    background-color: #484a4d;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: filter 300ms;
+
+    &:hover {
+      filter: brightness(1.2);
+    }
+`
 
 function DropdownMenu() {
   const [activeMenu, setActiveMenu] = useState('main');
