@@ -51,30 +51,43 @@ const GlobalStyles = createGlobalStyle`
   }
 `
 
-function App() {
-  return (
-    <>
-    <GlobalStyles />
-    <Navbar>
-      <NavItem icon={<PlusIcon />} />
-      <NavItem icon={<BellIcon />} />
-      <NavItem icon={<MessengerIcon />} />
+const App = () => (
+  <>
+  <GlobalStyles />
+  <Navbar>
+    <NavItem icon={<PlusIcon />} />
+    <NavItem icon={<BellIcon />} />
+    <NavItem icon={<MessengerIcon />} />
 
-      <NavItem icon={<CaretIcon />}>
-        <DropdownMenu></DropdownMenu>
-      </NavItem>
-    </Navbar>
-    </>
-  );
-}
+    <NavItem icon={<CaretIcon />}>
+      <DropdownMenu></DropdownMenu>
+    </NavItem>
+  </Navbar>
+  </>
+)
 
-function Navbar(props) {
-  return (
-    <nav className="navbar">
-      <ul className="navbar-nav">{props.children}</ul>
-    </nav>
-  );
-}
+const Navbar = (props) => (
+  <Nav>
+    <NavNav>{props.children}</NavNav>
+  </Nav>
+)
+
+const Nav = styled.nav`
+  height: var(--nav-size);
+  background-color: var(--bg);
+  padding: 0 1rem;
+  border-bottom: var(--border);
+`
+
+const NavNav = styled.ul`
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+`
 
 function NavItem(props) {
   const [open, setOpen] = useState(false);
