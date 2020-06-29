@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import "../styles/styles.css"
-import styled, { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle, ThemeProvider } from 'styled-components'
 import { CSSTransition } from 'react-transition-group'
 import BellIcon from '../svg/bell.svg'
 import MessengerIcon from '../svg/messenger.svg'
@@ -11,8 +11,21 @@ import ChevronIcon from '../svg/chevron.svg'
 import ArrowIcon from '../svg/arrow.svg'
 import BoltIcon from '../svg/bolt.svg'
 
+// localize everything
+// add icons/links
+// improve dropdown view
+
+const GlobalStyles = createGlobalStyle`
+  a {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+`
+
 function App() {
   return (
+    <>
+    <GlobalStyles />
     <Wrapper>
       <Navbar>
         <NavItem icon={<PlusIcon />} />
@@ -24,6 +37,7 @@ function App() {
         </NavItem>
       </Navbar>
     </Wrapper>
+    </>
   );
 }
 
