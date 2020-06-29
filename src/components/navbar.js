@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
-import "../styles/styles.css"
-import styled, { createGlobalStyle, ThemeProvider } from 'styled-components'
+import "../styles/transitions.css"
+import styled, { createGlobalStyle } from 'styled-components'
 import { CSSTransition } from 'react-transition-group'
 import BellIcon from '../svg/bell.svg'
 import MessengerIcon from '../svg/messenger.svg'
@@ -45,10 +45,10 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
   }
 
-  a {
+  /* a {
     color: var(--text-color);
     text-decoration: none;
-  }
+  } */
 
   svg { 
     fill: var(--text-color);
@@ -128,6 +128,8 @@ const IconButtonA = styled.a`
     align-items: center;
     justify-content: center;
     transition: filter 300ms;
+    color: var(--text-color);
+    text-decoration: none;
 
     &:hover {
       filter: brightness(1.2);
@@ -143,20 +145,54 @@ function DropdownMenu() {
     setMenuHeight(dropdownRef.current?.firstChild.offsetHeight)
   }, [])
 
-  function calcHeight(el) {
+  const calcHeight = (el) => {
     const height = el.offsetHeight;
     setMenuHeight(height);
   }
 
-  function DropdownItem(props) {
-    return (
-      <a href="#" className="menu-item" onClick={() => props.goToMenu && setActiveMenu(props.goToMenu)}>
-        <span className="icon-button">{props.leftIcon}</span>
-        {props.children}
-        <span className="icon-right">{props.rightIcon}</span>
-      </a>
-    );
-  }
+  const DropdownItem = (props) => (
+    <MenuItemA href="#" onClick={() => props.goToMenu && setActiveMenu(props.goToMenu)}>
+      <IconButtonSpan>{props.leftIcon}</IconButtonSpan>
+      {props.children}
+      <IconRightSpan>{props.rightIcon}</IconRightSpan>
+    </MenuItemA>
+  )
+
+  const MenuItemA = styled.a`
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: var(--border-radius);
+    transition: background var(--speed);
+    padding: 0.5rem;
+    color: var(--text-color);
+    text-decoration: none;
+
+    &:hover {
+      background-color: #525357;
+    }
+  `
+  const IconButtonSpan = styled.span`
+    --button-size: calc(var(--nav-size) * 0.5);
+    width: var(--button-size);
+    height: var(--button-size);
+    background-color: #484a4d;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: filter 300ms;
+    margin-right: 0.5rem;
+
+    &:hover {
+      filter: none;
+    }
+  `
+  const IconRightSpan = styled.span`
+    margin-left: auto;
+  `
 
   return (
     <div className="dropdown" style={{ height: menuHeight }} ref={dropdownRef}>
