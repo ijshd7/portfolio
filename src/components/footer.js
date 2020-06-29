@@ -28,7 +28,7 @@ const Logo = () => (
 const Footer = () => (
     <FooterWrapper className="py-4">
         <div className="inline-flex">
-            <div class="mx-2 rounded-full h-12 w-12 flex items-center justify-center border border-white text-white hover:bg-white hover:text-green-400">
+            <div className="mx-2 rounded-full h-12 w-12 flex items-center justify-center border border-white text-white hover:bg-white hover:text-green-400">
                 <a
                     href="https://github.com/ijshd7"
                     target="_blank"

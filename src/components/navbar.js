@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react'
-import "../styles/transitions.css"
 import styled, { createGlobalStyle } from 'styled-components'
+import { Link } from "gatsby"
 import { CSSTransition } from 'react-transition-group'
+import "../styles/transitions.css"
+import logo from "../images/isaiah-logo-white.png"
 import BellIcon from '../svg/bell.svg'
 import MessengerIcon from '../svg/messenger.svg'
 import CaretIcon from '../svg/caret.svg'
@@ -10,8 +12,9 @@ import CogIcon from '../svg/cog.svg'
 import ChevronIcon from '../svg/chevron.svg'
 import ArrowIcon from '../svg/arrow.svg'
 import BoltIcon from '../svg/bolt.svg'
+import DeskIcon from "../svg/desk.svg"
+import MeteorIcon from "../svg/meteorwhite.svg"
 
-// localize everything
 // add icons/links
 // improve dropdown view
 
@@ -39,18 +42,22 @@ const GlobalStyles = createGlobalStyle`
     --speed: 500ms; 
   }
 
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
   svg { 
     fill: var(--text-color);
     width: 20px;
     height: 20px;
   }
 `
+
+const ImgWrapper = styled.img`
+  fill: var(--text-color);
+  width: 20px;
+  height: 20px;
+`
+
+const Logo = () => (
+  <ImgWrapper src={logo} alt="Cat logo" />
+)
 
 const App = () => (
   <>
@@ -59,7 +66,7 @@ const App = () => (
     <NavItem icon={<PlusIcon />} />
     <NavItem icon={<BellIcon />} />
     <NavItem icon={<MessengerIcon />} />
-
+    <NavItem icon={<Link to="/"><Logo /></Link>} />
     <NavItem icon={<CaretIcon />}>
       <DropdownMenu></DropdownMenu>
     </NavItem>
@@ -111,24 +118,67 @@ const NavItemLi = styled.li`
     justify-content: center;
 `
 
-const IconButtonA = styled.a`
-    --button-size: calc(var(--nav-size) * 0.5);
-    width: var(--button-size);
-    height: var(--button-size);
-    background-color: #484a4d;
-    border-radius: 50%;
-    padding: 5px;
-    margin: 2px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: filter 300ms;
-    color: var(--text-color);
-    text-decoration: none;
+const IconButtonA = styled.button`
+  --button-size: calc(var(--nav-size) * 0.5);
+  width: var(--button-size);
+  height: var(--button-size);
+  background-color: #484a4d;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: filter 300ms;
+  color: var(--text-color);
+  text-decoration: none;
+  outline: 0 !important;
+  box-shadow: none;
 
-    &:hover {
-      filter: brightness(1.2);
-    }
+  &:hover {
+    filter: brightness(1.2);
+  }
+`
+
+const MenuItemA = styled.label`
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-radius: var(--border-radius);
+  transition: background var(--speed);
+  padding: 0.5rem;
+  color: var(--text-color);
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+
+
+  &:hover {
+    background-color: #525357;
+  }
+`
+
+const IconButtonSpan = styled.span`
+  --button-size: calc(var(--nav-size) * 0.5);
+  width: var(--button-size);
+  height: var(--button-size);
+  background-color: #484a4d;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: filter 300ms;
+  margin-right: 0.5rem;
+
+  &:hover {
+    filter: none;
+  }
+`
+
+const IconRightSpan = styled.span`
+  margin-left: auto;
 `
 
 function DropdownMenu() {
@@ -153,42 +203,6 @@ function DropdownMenu() {
     </MenuItemA>
   )
 
-  const MenuItemA = styled.a`
-    height: 50px;
-    display: flex;
-    align-items: center;
-    border-radius: var(--border-radius);
-    transition: background var(--speed);
-    padding: 0.5rem;
-    color: var(--text-color);
-    text-decoration: none;
-
-    &:hover {
-      background-color: #525357;
-    }
-  `
-  const IconButtonSpan = styled.span`
-    --button-size: calc(var(--nav-size) * 0.5);
-    width: var(--button-size);
-    height: var(--button-size);
-    background-color: #484a4d;
-    border-radius: 50%;
-    padding: 5px;
-    margin: 2px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: filter 300ms;
-    margin-right: 0.5rem;
-
-    &:hover {
-      filter: none;
-    }
-  `
-  const IconRightSpan = styled.span`
-    margin-left: auto;
-  `
-
   return (
     <div className="dropdown" style={{ height: menuHeight }} ref={dropdownRef}>
 
@@ -199,18 +213,39 @@ function DropdownMenu() {
         unmountOnExit
         onEnter={calcHeight}>
         <div className="menu">
-          <DropdownItem>My Profile</DropdownItem>
+          <DropdownItem
+            leftIcon={<Logo />}
+          >Isaiah
+          </DropdownItem>
           <DropdownItem
             leftIcon={<CogIcon />}
             rightIcon={<ChevronIcon />}
             goToMenu="settings">
-            Settings
+            Resume
           </DropdownItem>
           <DropdownItem
-            leftIcon="🦧"
+            leftIcon={<MeteorIcon />}
             rightIcon={<ChevronIcon />}
             goToMenu="animals">
-            Animals
+            Blog
+          </DropdownItem>
+          <DropdownItem
+            leftIcon={<DeskIcon />}
+            rightIcon={<ChevronIcon />}
+            goToMenu="animals">
+            Resources
+          </DropdownItem>
+          <DropdownItem
+            leftIcon={<BoltIcon />}
+            rightIcon={<ChevronIcon />}
+            goToMenu="animals">
+            Tutorials
+          </DropdownItem>
+          <DropdownItem
+            leftIcon={<MessengerIcon />}
+            rightIcon={<ChevronIcon />}
+            goToMenu="animals">
+            Contact Me
           </DropdownItem>
 
         </div>
