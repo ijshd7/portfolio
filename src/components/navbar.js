@@ -14,9 +14,21 @@ import ArrowIcon from '../svg/arrow.svg'
 import BoltIcon from '../svg/bolt.svg'
 import DeskIcon from "../svg/desk.svg"
 import MeteorIcon from "../svg/meteorwhite.svg"
+import EmailIcon from "../svg/email.svg"
+import PhoneIcon from "../svg/phone.svg"
+import LinkedinIcon from "../svg/linkedin.svg"
+import HtmlIcon from "../svg/html.svg"
+import CssIcon from "../svg/css.svg"
+import JavaScriptIcon from "../svg/javascript.svg"
+import NodeIcon from "../svg/nodejs.svg"
+import GatsbyIcon from "../svg/gatsby.svg"
+import TeamIcon from "../svg/team.svg"
+import People1 from "../svg/people1.svg"
+import People2 from "../svg/people2.svg"
+import People3 from "../svg/people3.svg"
+import People4 from "../svg/people4.svg"
 
-// add icons/links
-// improve dropdown view
+// add links
 
 const GlobalStyles = createGlobalStyle`
   body {
@@ -215,39 +227,44 @@ function DropdownMenu() {
         <div className="menu">
           <DropdownItem
             leftIcon={<Logo />}
-          >Isaiah
+          >
           </DropdownItem>
           <DropdownItem
             leftIcon={<CogIcon />}
             rightIcon={<ChevronIcon />}
             goToMenu="settings">
-            Resume
+            Core Technologies
           </DropdownItem>
           <DropdownItem
             leftIcon={<MeteorIcon />}
             rightIcon={<ChevronIcon />}
             goToMenu="animals">
-            Blog
+            Blog (COMING SOON!)
           </DropdownItem>
           <DropdownItem
             leftIcon={<DeskIcon />}
             rightIcon={<ChevronIcon />}
             goToMenu="animals">
-            Resources
+            Resources (COMING SOON!)
           </DropdownItem>
           <DropdownItem
             leftIcon={<BoltIcon />}
             rightIcon={<ChevronIcon />}
             goToMenu="animals">
-            Tutorials
+            Tutorials (COMING SOON!)
           </DropdownItem>
           <DropdownItem
             leftIcon={<MessengerIcon />}
             rightIcon={<ChevronIcon />}
-            goToMenu="animals">
+            goToMenu="contact">
             Contact Me
           </DropdownItem>
-
+          <DropdownItem
+            leftIcon={<TeamIcon />}
+            rightIcon={<ChevronIcon />}
+            goToMenu="tributes">
+            Icon Tributes!
+          </DropdownItem>
         </div>
       </CSSTransition>
 
@@ -259,12 +276,13 @@ function DropdownMenu() {
         onEnter={calcHeight}>
         <div className="menu">
           <DropdownItem goToMenu="main" leftIcon={<ArrowIcon />}>
-            <h2>My Tutorial</h2>
+            <h2>Back</h2>
           </DropdownItem>
-          <DropdownItem leftIcon={<BoltIcon />}>HTML</DropdownItem>
-          <DropdownItem leftIcon={<BoltIcon />}>CSS</DropdownItem>
-          <DropdownItem leftIcon={<BoltIcon />}>JavaScript</DropdownItem>
-          <DropdownItem leftIcon={<BoltIcon />}>Awesome!</DropdownItem>
+          <DropdownItem leftIcon={<HtmlIcon />}>HTML</DropdownItem>
+          <DropdownItem leftIcon={<CssIcon />}>CSS</DropdownItem>
+          <DropdownItem leftIcon={<JavaScriptIcon />}>JavaScript</DropdownItem>
+          <DropdownItem leftIcon={<GatsbyIcon />}>Gatsby</DropdownItem>
+          <DropdownItem leftIcon={<NodeIcon />}>Node</DropdownItem>
         </div>
       </CSSTransition>
 
@@ -276,12 +294,46 @@ function DropdownMenu() {
         onEnter={calcHeight}>
         <div className="menu">
           <DropdownItem goToMenu="main" leftIcon={<ArrowIcon />}>
-            <h2>Animals</h2>
+            <h2>Back</h2>
           </DropdownItem>
           <DropdownItem leftIcon="🦘">Kangaroo</DropdownItem>
           <DropdownItem leftIcon="🐸">Frog</DropdownItem>
-          <DropdownItem leftIcon="🦋">Horse?</DropdownItem>
+          <DropdownItem leftIcon="🦋">Dinosaur?</DropdownItem>
           <DropdownItem leftIcon="🦔">Hedgehog</DropdownItem>
+        </div>
+      </CSSTransition>
+
+      <CSSTransition
+        in={activeMenu === 'contact'}
+        timeout={500}
+        classNames="menu-secondary"
+        unmountOnExit
+        onEnter={calcHeight}>
+        <div className="menu">
+          <DropdownItem goToMenu="main" leftIcon={<ArrowIcon />}>
+            <h2>Back</h2>
+          </DropdownItem>
+          <DropdownItem leftIcon={<EmailIcon />}>Email</DropdownItem>
+          <DropdownItem leftIcon={<PhoneIcon />}>Phone</DropdownItem>
+          <DropdownItem leftIcon={<LinkedinIcon />}>LinkedIn</DropdownItem>
+        </div>
+      </CSSTransition>
+
+      <CSSTransition
+        in={activeMenu === 'tributes'}
+        timeout={500}
+        classNames="menu-secondary"
+        unmountOnExit
+        onEnter={calcHeight}>
+        <div className="menu">
+          <DropdownItem goToMenu="main" leftIcon={<ArrowIcon />}>
+            <h2>Back</h2>
+          </DropdownItem>
+          <DropdownItem leftIcon={<People1 />}>Freepik</DropdownItem>
+          <DropdownItem leftIcon={<People2 />}>Nhor Pai</DropdownItem>
+          <DropdownItem leftIcon={<People3 />}>Good Ware</DropdownItem>
+          <DropdownItem leftIcon={<People4 />}>Icon King</DropdownItem>
+          <DropdownItem leftIcon={<People1 />}>Raj Dev</DropdownItem>
         </div>
       </CSSTransition>
     </div>
