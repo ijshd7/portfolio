@@ -4,10 +4,8 @@ import { Link } from "gatsby"
 import { CSSTransition } from 'react-transition-group'
 import "../styles/transitions.css"
 import logo from "../images/isaiah-logo-white.png"
-import BellIcon from '../svg/bell.svg'
 import MessengerIcon from '../svg/messenger.svg'
 import CaretIcon from '../svg/caret.svg'
-import PlusIcon from '../svg/plus.svg'
 import CogIcon from '../svg/cog.svg'
 import ChevronIcon from '../svg/chevron.svg'
 import ArrowIcon from '../svg/arrow.svg'
@@ -15,8 +13,8 @@ import BoltIcon from '../svg/bolt.svg'
 import DeskIcon from "../svg/desk.svg"
 import MeteorIcon from "../svg/meteorwhite.svg"
 import EmailIcon from "../svg/email.svg"
-import PhoneIcon from "../svg/phone.svg"
 import LinkedinIcon from "../svg/linkedin.svg"
+import CodepenIcon from "../svg/codepen.svg"
 import HtmlIcon from "../svg/html.svg"
 import CssIcon from "../svg/css.svg"
 import JavaScriptIcon from "../svg/javascript.svg"
@@ -27,8 +25,6 @@ import People1 from "../svg/people1.svg"
 import People2 from "../svg/people2.svg"
 import People3 from "../svg/people3.svg"
 import People4 from "../svg/people4.svg"
-
-// add links
 
 const GlobalStyles = createGlobalStyle`
   body {
@@ -75,9 +71,12 @@ const App = () => (
   <>
   <GlobalStyles />
   <Navbar>
-    <NavItem icon={<PlusIcon />} />
-    <NavItem icon={<BellIcon />} />
-    <NavItem icon={<MessengerIcon />} />
+    <NavItem
+      icon={<a href="https://www.linkedin.com/in/isaiah-sherrill-ab58b970" target="_blank" aria-label="LinkedIn" rel="noreferrer"><LinkedinIcon /></a>} />
+    <NavItem
+      icon={<a href="https://codepen.io/ijshd7" target="_blank" aria-label="Codepen" rel="noreferrer"><CodepenIcon /></a>} />
+    <NavItem
+      icon={<a href="mailto:ijshd7@mail.missouri.edu" target="_blank" aria-label="Email" rel="noreferrer"><MessengerIcon /></a>} />
     <NavItem icon={<Link to="/"><Logo /></Link>} />
     <NavItem icon={<CaretIcon />}>
       <DropdownMenu></DropdownMenu>
@@ -314,7 +313,6 @@ function DropdownMenu() {
             <h2>Back</h2>
           </DropdownItem>
           <DropdownItem leftIcon={<EmailIcon />}>Email</DropdownItem>
-          <DropdownItem leftIcon={<PhoneIcon />}>Phone</DropdownItem>
           <DropdownItem leftIcon={<LinkedinIcon />}>LinkedIn</DropdownItem>
         </div>
       </CSSTransition>
