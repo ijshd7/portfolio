@@ -29,7 +29,6 @@ import People4 from "../svg/people4.svg"
 const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
-    background: #151616;
     font-family: roboto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -296,7 +295,7 @@ function DropdownMenu() {
             <h2>Back</h2>
           </DropdownItem>
           <DropdownItem leftIcon="🦘">Kangaroo</DropdownItem>
-          <DropdownItem leftIcon="🐸">Frog</DropdownItem>
+          <DropdownItem leftIcon="🝸">Frog</DropdownItem>
           <DropdownItem leftIcon="🦋">Dinosaur?</DropdownItem>
           <DropdownItem leftIcon="🦔">Hedgehog</DropdownItem>
         </div>
