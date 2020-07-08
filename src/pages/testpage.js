@@ -6,6 +6,8 @@ import rise from "../images/risescreenshot.png"
 // use grid layout inspiration and possibly change theming to dark
 // AND/OR add dark/light theme
 
+//large grid for main page.. and centered stuff for homepage?
+
 export default function TestPage() {
     return (
         <>
