@@ -1,4 +1,6 @@
 import React from "react"
+import movet from "../images/movetscreenshot.png"
+import rise from "../images/risescreenshot.png"
 
 // need to add projects, build testimonial section
 // use grid layout inspiration and possibly change theming to dark
