@@ -11,6 +11,8 @@ import rise from "../images/risescreenshot.png"
 //large grid for main page.. and centered stuff for homepage?
 
 const Wrapper = styled.div`
+    margin-top: 5rem;
+    margin-bottom: 5rem;
     display: grid;
     gap: 1.25rem;
     grid-template-columns: repeat(auto-fit, minmax(250px,500px));
@@ -25,13 +27,13 @@ const ImgWrapper = styled.div`
 
 const ImageOne = () => (
     <ImgWrapper>
-        <img src={movet} />
+        <img alt="pic" src={movet} />
     </ImgWrapper>
 )
 
 const ImageTwo = () => (
     <ImgWrapper>
-        <img src={rise} />
+        <img alt="pic" src={rise} />
     </ImgWrapper>
 )
 
@@ -39,6 +41,10 @@ export default function TestPage() {
     return (
         <Layout>
             <Wrapper>
+                <ImageOne />
+                <ImageTwo />
+                <ImageOne />
+                <ImageTwo />
                 <ImageOne />
                 <ImageTwo />
                 <ImageOne />
