@@ -1,4 +1,6 @@
 import React from "react"
+import styled from "styled-components"
+import Layout from "../components/layout"
 import movet from "../images/movetscreenshot.png"
 import rise from "../images/risescreenshot.png"
 
@@ -8,10 +10,40 @@ import rise from "../images/risescreenshot.png"
 
 //large grid for main page.. and centered stuff for homepage?
 
+const Wrapper = styled.div`
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px,500px));
+    justify-content: space-evenly;
+`
+
+const ImgWrapper = styled.div`
+    max-width: 650px;
+    overflow: hidden;
+    font-weight: 300;
+`
+
+const ImageOne = () => (
+    <ImgWrapper>
+        <img src={movet} />
+    </ImgWrapper>
+)
+
+const ImageTwo = () => (
+    <ImgWrapper>
+        <img src={rise} />
+    </ImgWrapper>
+)
+
 export default function TestPage() {
     return (
-        <>
-            <h1>TEST PAGE LOL</h1>
-        </>
+        <Layout>
+            <Wrapper>
+                <ImageOne />
+                <ImageTwo />
+                <ImageOne />
+                <ImageTwo />
+            </Wrapper>
+        </Layout>
     );
 }
