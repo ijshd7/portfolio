@@ -39,13 +39,13 @@ const Wrapper = styled.div`
     text-align: center;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
     box-sizing: border-box;
-    transition: all .35s ease-in-out;
 `
 
 const FirstWrapper = styled.img`
     max-width: 100%;
     vertical-align: top;
     height: 210px;
+    transition: all .35s ease-in-out;
 
     &:hover {
         opacity: 0.3;
@@ -58,10 +58,7 @@ const SecondWrapper = styled.img`
     top: 50%;
     left: 50%;
     border-radius: 50%;
-    font-size: 34px;
     color: #000000;
-    width: 60px;
-    height: 60px;
     line-height: 60px;
     background: #ffffff;
     transform: translate(-50%, -50%) scale(0);
@@ -76,11 +73,17 @@ const SecondWrapper = styled.img`
 
 
 const Rise = () => (
-    <img height="200px" width="200px" alt="pic" src={movet} />
+    <>
+        <FirstWrapper height="200px" width="200px" alt="pic" src={movet} />
+        <SecondWrapper height="200px" width="200px" alt="logo" src={movetlogo} />
+    </>
 )
 
 const Movet = () => (
-    <img height="200px" width="200px" alt="pic" src={rise} />
+    <>
+        <FirstWrapper height="200px" width="200px" alt="pic" src={rise} />
+        <SecondWrapper height="200px" width="200px" alt="logo" src={riselogo} />
+    </>
 )
 
 export default function TestPage() {
@@ -88,8 +91,10 @@ export default function TestPage() {
         <Layout>
             <Header>Projects</Header>
             <Container>
-                <Rise />
-                <Movet />
+                <Wrapper>
+                    <Rise />
+                    <Movet />
+                </Wrapper>
             </Container>
         </Layout>
     );
