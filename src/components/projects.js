@@ -12,6 +12,8 @@ import rise4 from "../images/risescreenshot3.png"
 
 // need to touchup pics in gimp: corners and greenspace on screenshot
 
+// will probably need containers for both movet and rise items
+
 // projects: movet, rise build
 // carousel
 
