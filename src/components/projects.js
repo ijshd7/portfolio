@@ -10,6 +10,7 @@ import rise2 from "../images/risescreenshot1.png"
 import rise3 from "../images/risescreenshot2.png"
 import rise4 from "../images/risescreenshot3.png"
 
+// need to touchup pics in gimp: corners and greenspace on screenshot
 
 // projects: movet, rise build
 // carousel
@@ -23,11 +24,37 @@ const ProjectsWrapper = styled.section`
     width: 100%;
 `
 
+const ImgWrapper = styled.div`
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-evenly;
+    max-width: 650px;
+    overflow: hidden;
+    font-weight: 300;
+`
+
+//movet
+const Image = ({source1, source2}) => (
+    <ImgWrapper>
+        <img
+            alt="pic"
+            width="250px"
+            src={source1}
+            onMouseOver={e => (e.currentTarget.src = source2)}
+            onMouseOut={e => (e.currentTarget.src = source1)}
+        />
+    </ImgWrapper>
+)
+
+//rise
+
+
 const Projects = () => (
     <ProjectsWrapper>
         <div className="my-16 text-center text-white font-mono antialiased">
             <h1 style={{fontSize: "8vh"}} className="mb-8 ">PROJECTS</h1>
-            <p style={{fontSize: "6vh"}} className="mt-auto">Coming Soon...</p>
+            <Image source1={movetiphone1} source2={movetiphone2} />
         </div>
     </ProjectsWrapper>
 )
