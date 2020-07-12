@@ -1,8 +1,17 @@
 import React from "react"
 import styled from "styled-components"
+import movet from "../images/movetscreenshot.png"
+import movetlogo from "../images/movetlogo.png"
+import movetiphone1 from "../images/movetiphone.png"
+import movetiphone2 from "../images/movetiphone2.png"
+import riselogo from "../images/riselogo.png"
+import rise1 from "../images/risescreenshot.png"
+import rise2 from "../images/risescreenshot1.png"
+import rise3 from "../images/risescreenshot2.png"
+import rise4 from "../images/risescreenshot3.png"
 
-// screenshots of projects / mobile views
-// projects: movet, rise build, 
+
+// projects: movet, rise build
 // carousel
 
 const ProjectsWrapper = styled.section`

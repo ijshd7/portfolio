@@ -11,14 +11,14 @@ import rise2 from "../images/risescreenshot1.png"
 import rise3 from "../images/risescreenshot2.png"
 import rise4 from "../images/risescreenshot3.png"
 
-// carousel for rise
+// carousel for rise.. think it might require a library
 // hover effect for movet
 // other projects link
 
 const Wrapper = styled.div`
     margin-top: 5rem;
     margin-bottom: 5rem;
-    display: grid;
+    display: flex;
     align-items: center;
     gap: 1.25rem;
     justify-content: space-evenly;
@@ -42,13 +42,6 @@ export default function TestPage() {
             <Wrapper>
                 <Image source={movetlogo} />
                 <Image source={riselogo} />
-                <Image source={movet} />
-                <Image source={rise1} />
-                <Image source={movetiphone1} />
-                <Image source={rise2} />
-                <Image source={movetiphone2} />
-                <Image source={rise3} />
-                <Image source={rise4} />
             </Wrapper>
         </Layout>
     );
