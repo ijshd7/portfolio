@@ -9,6 +9,7 @@ import rise1 from "../images/risescreenshot.png"
 import rise2 from "../images/risescreenshot1.png"
 import rise3 from "../images/risescreenshot2.png"
 import rise4 from "../images/risescreenshot3.png"
+import RiseCarousel from "./riseCarousel"
 
 // need to touchup pics in gimp: corners and greenspace on screenshot
 
@@ -46,6 +47,7 @@ const Image = ({source1, source2}) => (
             onMouseOver={e => (e.currentTarget.src = source2)}
             onMouseOut={e => (e.currentTarget.src = source1)}
         />
+        <RiseCarousel />
     </ImgWrapper>
 )
 

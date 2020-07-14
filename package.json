@@ -27,6 +27,7 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.0.0",
+    "react-responsive-carousel": "^3.2.9",
     "react-transition-group": "^4.4.1",
     "styled-components": "^5.1.1",
     "tailwind.macro": "^0.5.10",
