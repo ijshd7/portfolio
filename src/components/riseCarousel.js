@@ -16,17 +16,17 @@ export default class RiseCarousel extends React.Component {
                 showStatus={false}
                 showIndicators={false}
             >
-                <div>
-                    <img src={rise1} />
+                <div height="auto">
+                    <img width="auto" height="100%" src={rise1} />
                 </div>
-                <div>
-                    <img src={rise2} />
+                <div height="auto">
+                    <img width="auto" height="100%" src={rise2} />
                 </div>
-                <div>
-                    <img src={rise3} />
+                <div height="auto">
+                    <img width="auto" height="100%" src={rise3} />
                 </div>
-                <div>
-                    <img src={rise4} />
+                <div height="auto">
+                    <img width="auto" height="100%" src={rise4} />
                 </div>
             </Carousel>
         )
