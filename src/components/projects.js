@@ -18,6 +18,8 @@ import RiseCarousel from "./riseCarousel"
 // projects: movet, rise build
 // carousel
 
+// scale rise pics
+
 const ProjectsWrapper = styled.section`
     background: linear-gradient(45deg, #11A49B, #90FC8E) no-repeat center top;
     background-size: contain;
