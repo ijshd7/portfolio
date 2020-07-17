@@ -1,10 +1,10 @@
 import React from "react"
 import { Carousel } from "react-responsive-carousel"
 import "react-responsive-carousel/lib/styles/carousel.min.css"
-import rise1 from "../images/risescreenshot.png"
-import rise2 from "../images/risescreenshot1.png"
-import rise3 from "../images/risescreenshot2.png"
-import rise4 from "../images/risescreenshot3.png"
+import rise1 from "../images/risecarousel1.png"
+import rise2 from "../images/risecarousel2.png"
+import rise3 from "../images/risecarousel3.png"
+import rise4 from "../images/risecarousel4.png"
 
 export default class RiseCarousel extends React.Component {
     render() {
