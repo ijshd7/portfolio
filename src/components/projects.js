@@ -18,37 +18,19 @@ const ProjectsWrapper = styled.section`
     width: 100%;
 `
 
-const MovetWrapper = styled.div`
-    display: flex;
-    align-items: center;
-    margin: auto;
-    justify-content: space-evenly;
-    max-width: 650px;
-    overflow: hidden;
-    font-weight: 300;
-`
-
 //movet
 const Movet = ({source1, source2}) => (
-    <MovetWrapper>
-        <img
-            alt="pic"
-            width="250px"
-            src={source1}
-            onMouseOver={e => (e.currentTarget.src = source2)}
-            onMouseOut={e => (e.currentTarget.src = source1)}
-        />
-    </MovetWrapper>
+    <img
+        alt="Movet Screenshot"
+        width="250px"
+        src={source1}
+        onMouseOver={e => (e.currentTarget.src = source2)}
+        onMouseOut={e => (e.currentTarget.src = source1)}
+    />
 )
 
 const RiseWrapper = styled.div`
-    display: flex;
-    align-items: center;
-    margin: auto;
-    justify-content: space-evenly;
-    max-width: 450px;
-    overflow: hidden;
-    font-weight: 300;
+    max-width: 550px;
 `
 
 //rise
@@ -58,13 +40,23 @@ const Rise = () => (
     </RiseWrapper>
 )
 
+// Projects
+const MovetRise = styled.div`
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-evenly;
+`
+
 
 const Projects = () => (
     <ProjectsWrapper>
         <div className="my-16 text-center text-white font-mono antialiased">
             <h1 style={{fontSize: "8vh"}} className="mb-8 ">PROJECTS</h1>
-            <Movet source1={movetiphone1} source2={movetiphone2} />
-            <Rise />
+            <MovetRise>
+                <Movet source1={movetiphone1} source2={movetiphone2} />
+                <Rise />
+            </MovetRise>
         </div>
     </ProjectsWrapper>
 )
