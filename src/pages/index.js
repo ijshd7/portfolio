@@ -4,7 +4,6 @@ import Hero from "../components/hero"
 import Introduction from "../components/introduction"
 import About from "../components/about"
 import Projects from "../components/projects"
-import Testimonials from "../components/testimonials"
 
 export default function IndexPage() {
   return (
@@ -13,7 +12,6 @@ export default function IndexPage() {
       <Introduction />
       <About />
       <Projects />
-      <Testimonials />
     </Layout>
   );
 }

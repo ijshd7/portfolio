@@ -10,7 +10,7 @@ import logo from "../images/isaiah-logo-white.png"
 library.add(fab, faEnvelope)
 
 const FooterWrapper = styled.div`
-    background: linear-gradient(45deg, #11A49B, #90FC8E) no-repeat center top;
+    background-color: black;
     background-size: contain;
     display: inline-block;
     position: relative;
@@ -28,7 +28,7 @@ const Logo = () => (
 const Footer = () => (
     <FooterWrapper className="py-4">
         <div className="inline-flex">
-            <div className="mx-2 rounded-full h-12 w-12 flex items-center justify-center border border-white text-white hover:bg-white hover:text-green-400">
+            <div className="mx-2 rounded-full h-12 w-12 flex items-center justify-center border border-white text-white hover:bg-white hover:text-black">
                 <a
                     href="https://github.com/ijshd7"
                     target="_blank"
@@ -41,7 +41,7 @@ const Footer = () => (
                     />
                 </a>
             </div>
-            <div className=" mx-2 rounded-full h-12 w-12 flex items-center justify-center border border-white text-white hover:bg-white hover:text-green-400">
+            <div className=" mx-2 rounded-full h-12 w-12 flex items-center justify-center border border-white text-white hover:bg-white hover:text-black">
                 <a
                     href="https://www.linkedin.com/in/isaiah-sherrill-ab58b970"
                     target="_blank"
@@ -54,7 +54,7 @@ const Footer = () => (
                     />
                 </a>
             </div>
-            <div className="mx-2 rounded-full h-12 w-12 flex items-center justify-center border border-white text-white hover:bg-white hover:text-green-400">
+            <div className="mx-2 rounded-full h-12 w-12 flex items-center justify-center border border-white text-white hover:bg-white hover:text-black">
                 <a
                     href="https://codepen.io/ijshd7"
                     target="_blank"
@@ -67,7 +67,7 @@ const Footer = () => (
                     />
                 </a>
             </div>
-            <div className="mx-2 rounded-full h-12 w-12 flex items-center justify-center border border-white text-white hover:bg-white hover:text-green-400">
+            <div className="mx-2 rounded-full h-12 w-12 flex items-center justify-center border border-white text-white hover:bg-white hover:text-black">
                 <a
                     href="mailto:ijshd7@mail.missouri.edu"
                     target="_blank"
