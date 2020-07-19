@@ -9,13 +9,6 @@ import RiseCarousel from "./riseCarousel"
 
 // need to touchup pics in gimp: corners and greenspace on screenshot
 
-// will probably need containers for both movet and rise items
-
-// projects: movet, rise build
-// carousel
-
-// scale rise pics
-
 const ProjectsWrapper = styled.section`
     background: linear-gradient(45deg, #11A49B, #90FC8E) no-repeat center top;
     background-size: contain;
@@ -25,7 +18,7 @@ const ProjectsWrapper = styled.section`
     width: 100%;
 `
 
-const ImgWrapper = styled.div`
+const MovetWrapper = styled.div`
     display: flex;
     align-items: center;
     margin: auto;
@@ -36,8 +29,8 @@ const ImgWrapper = styled.div`
 `
 
 //movet
-const Image = ({source1, source2}) => (
-    <ImgWrapper>
+const Movet = ({source1, source2}) => (
+    <MovetWrapper>
         <img
             alt="pic"
             width="250px"
@@ -45,18 +38,33 @@ const Image = ({source1, source2}) => (
             onMouseOver={e => (e.currentTarget.src = source2)}
             onMouseOut={e => (e.currentTarget.src = source1)}
         />
-        <RiseCarousel />
-    </ImgWrapper>
+    </MovetWrapper>
 )
 
+const RiseWrapper = styled.div`
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-evenly;
+    max-width: 450px;
+    overflow: hidden;
+    font-weight: 300;
+`
+
 //rise
+const Rise = () => (
+    <RiseWrapper>
+        <RiseCarousel />
+    </RiseWrapper>
+)
 
 
 const Projects = () => (
     <ProjectsWrapper>
         <div className="my-16 text-center text-white font-mono antialiased">
             <h1 style={{fontSize: "8vh"}} className="mb-8 ">PROJECTS</h1>
-            <Image source1={movetiphone1} source2={movetiphone2} />
+            <Movet source1={movetiphone1} source2={movetiphone2} />
+            <Rise />
         </div>
     </ProjectsWrapper>
 )
