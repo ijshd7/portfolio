@@ -20,13 +20,17 @@ const ProjectsWrapper = styled.section`
 
 //movet
 const Movet = ({source1, source2}) => (
-    <img
-        alt="Movet Screenshot"
-        width="250px"
-        src={source1}
-        onMouseOver={e => (e.currentTarget.src = source2)}
-        onMouseOut={e => (e.currentTarget.src = source1)}
-    />
+    <div>
+        <img
+            className="block"
+            alt="Movet Screenshot"
+            width="250px"
+            src={source1}
+            onMouseOver={e => (e.currentTarget.src = source2)}
+            onMouseOut={e => (e.currentTarget.src = source1)}
+        />
+        <p className="block mt-2">MOVET</p>
+    </div>
 )
 
 const RiseWrapper = styled.div`
@@ -36,7 +40,8 @@ const RiseWrapper = styled.div`
 //rise
 const Rise = () => (
     <RiseWrapper>
-        <RiseCarousel />
+        <RiseCarousel className="block" />
+        <p className="block mt-2">RISE</p>
     </RiseWrapper>
 )
 
@@ -57,6 +62,7 @@ const Projects = () => (
                 <Movet source1={movetiphone1} source2={movetiphone2} />
                 <Rise />
             </MovetRise>
+            <h1 style={{fontSize: "8vh"}} className="mb-8 ">more</h1>
         </div>
     </ProjectsWrapper>
 )
