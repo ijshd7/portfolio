@@ -73,7 +73,7 @@ const MovetRise = styled.div`
 const Projects = () => (
     <ProjectsWrapper>
         <div className="my-16 text-center text-white font-mono antialiased">
-            <h1 style={{fontSize: "8vh"}} className="mb-8 ">PROJECTS</h1>
+            <h1 style={{fontSize: "8vh"}} className="mb-8 ">PROFESSIONAL PROJECTS</h1>
             <MovetRise>
                 <Movet source1={movetIphone1} source2={movetIphone2} />
                 <Rise />
