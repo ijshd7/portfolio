@@ -32,7 +32,7 @@ const Movet = ({source1, source2}) => (
             className="block mt-2"
             src={movetlogo}
         />
-        <p className="block mt-2">MOVET: Telehealth for your pets!</p>
+        <p className="block mt-2">Telehealth for your pets!</p>
     </div>
 )
 
@@ -47,7 +47,7 @@ const Rise = () => (
             className="block mt-2 mx-auto py-2 px-4 rounded-full"
             src={riselogo}
         />
-        <p className="block mt-2">RISE: Float Community Gathering</p>
+        <p className="block mt-2">Float Community Gathering</p>
     </RiseWrapper>
 )
 
