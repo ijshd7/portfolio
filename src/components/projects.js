@@ -18,7 +18,6 @@ const ProjectsWrapper = styled.section`
     width: 100%;
 `
 
-//movet
 const Movet = ({source1, source2}) => (
     <div>
         <img
@@ -29,6 +28,10 @@ const Movet = ({source1, source2}) => (
             onMouseOver={e => (e.currentTarget.src = source2)}
             onMouseOut={e => (e.currentTarget.src = source1)}
         />
+        <img
+            className="block mt-2"
+            src={movetlogo}
+        />
         <p className="block mt-2">MOVET: Telehealth for your pets!</p>
     </div>
 )
@@ -37,10 +40,13 @@ const RiseWrapper = styled.div`
     max-width: 550px;
 `
 
-//rise
 const Rise = () => (
     <RiseWrapper>
         <RiseCarousel className="block" />
+        <img
+            className="block mt-2 mx-auto py-2 px-4 rounded-full"
+            src={riselogo}
+        />
         <p className="block mt-2">RISE: Float Community Gathering</p>
     </RiseWrapper>
 )
