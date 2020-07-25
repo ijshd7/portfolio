@@ -11,6 +11,7 @@ import ArrowIcon from '../svg/arrow.svg'
 import EmailIcon from "../svg/email.svg"
 import LinkedinIcon from "../svg/linkedin.svg"
 import CodepenIcon from "../svg/codepen.svg"
+import PhoneIcon from "../svg/phone.svg"
 
 const GlobalStyles = createGlobalStyle`
   body {
@@ -232,8 +233,13 @@ function DropdownMenu() {
           <DropdownItem goToMenu="main" leftIcon={<ArrowIcon />}>
             <h2>Back</h2>
           </DropdownItem>
-          <DropdownItem leftIcon={<a href="mailto:ijshd7@mail.missouri.edu" target="_blank" aria-label="Email" rel="noreferrer"><EmailIcon /></a>}>Email</DropdownItem>
-          <DropdownItem leftIcon={<a href="https://www.linkedin.com/in/isaiah-sherrill-ab58b970" target="_blank" aria-label="LinkedIn" rel="noreferrer"><LinkedinIcon /></a>}>LinkedIn</DropdownItem>
+          <a href="mailto:ijshd7@mail.missouri.edu" target="_blank" aria-label="Email" rel="noreferrer">
+            <DropdownItem leftIcon={<EmailIcon />}>Email</DropdownItem>
+          </a>
+          <a href="https://www.linkedin.com/in/isaiah-sherrill-ab58b970" target="_blank" aria-label="LinkedIn" rel="noreferrer">
+            <DropdownItem leftIcon={<LinkedinIcon />}>LinkedIn</DropdownItem>
+          </a>
+          <DropdownItem leftIcon={<PhoneIcon />}>314-568-7576</DropdownItem>
         </div>
       </CSSTransition>
     </div>
