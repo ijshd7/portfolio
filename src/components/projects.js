@@ -98,18 +98,26 @@ const MovetRise = styled.div`
     display: flex;
     align-items: center;
     margin: auto;
-    justify-content: space-evenly;
+    justify-content: center;
 `
 
 
 const Projects = () => (
     <ProjectsWrapper>
         <div className="my-16 text-center text-white font-mono antialiased">
-            <h1 style={{fontSize: "8vh"}} className="mb-8 ">PROFESSIONAL PROJECTS</h1>
-            <MovetRise>
-                <Movet source1={movetIphone1} source2={movetIphone2} />
-                <Rise />
-            </MovetRise>
+            <h1 style={{fontSize: "8vh"}} className="mb-10 ">PROFESSIONAL PROJECTS</h1>
+            <Row>
+                <Column xs="12" sm="6" md="6" lg="6">
+                    <MovetRise>
+                        <Movet source1={movetIphone1} source2={movetIphone2} />
+                    </MovetRise>
+                </Column>
+                <Column xs="12" sm="6" md="6" lg="6" className="mt-16">
+                    <MovetRise>
+                        <Rise />
+                    </MovetRise>
+                </Column>
+            </Row>
         </div>
     </ProjectsWrapper>
 )
