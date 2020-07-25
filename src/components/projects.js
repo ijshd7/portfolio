@@ -63,7 +63,7 @@ const Movet = ({source1, source2}) => (
             rel="noreferrer"
         >
             <img
-                className="block mt-2 mx-auto rounded-full"
+                className="block mt-2 mx-auto rounded-full transform scale-75"
                 src={movetLogo}
                 alt="Movet Logo"
             />
@@ -73,6 +73,8 @@ const Movet = ({source1, source2}) => (
 )
 
 const RiseWrapper = styled.div`
+    margin-top: 5rem;
+    margin-right: 8rem;
     max-width: 550px;
 `
 
