@@ -45,6 +45,7 @@ const ProjectsWrapper = styled.section`
     position: relative;
     height: auto;
     width: 100%;
+    padding-bottom: 4rem;
 `
 
 const Movet = ({source1, source2}) => (
@@ -76,6 +77,7 @@ const RiseWrapper = styled.div`
     @media only screen and (min-width: 768px) {
         margin-top: 5rem;
         margin-right: 8rem;
+        max-width: 650px;
     }
     max-width: 550px;
 `
