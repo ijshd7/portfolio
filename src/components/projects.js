@@ -91,7 +91,7 @@ const Rise = () => (
             rel="noreferrer"
         >
             <img
-                className="block mt-2 mx-auto py-2 px-4 rounded-full"
+                className="block mt-4 mx-auto py-2 px-4 rounded-full"
                 src={riseLogo}
                 alt="Rise Logo"
             />

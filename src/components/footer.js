@@ -10,7 +10,7 @@ import logo from "../images/isaiah-logo-white.png"
 library.add(fab, faEnvelope)
 
 const FooterWrapper = styled.div`
-    padding-top: 4rem;
+    padding-top: 6rem;
     background-color: black;
     background-size: contain;
     display: inline-block;
