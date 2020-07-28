@@ -5,6 +5,7 @@ import movetIphone1 from "../images/movetiphone.png"
 import movetIphone2 from "../images/movetiphone2.png"
 import riseLogo from "../images/riselogo.png"
 import RiseCarousel from "./riseCarousel"
+import ContactForm from "./contactForm"
 
 const Row = styled.div`
     &::after {
@@ -111,7 +112,7 @@ const MovetRise = styled.div`
 const Projects = () => (
     <ProjectsWrapper>
         <div className="my-16 text-center text-white font-mono antialiased">
-            <h1 style={{fontSize: "8vh"}} className="mb-10 ">PROFESSIONAL PROJECTS</h1>
+            <h1 style={{fontSize: "8vh"}} className="mb-10">PROFESSIONAL PROJECTS</h1>
             <Row>
                 <Column xs="12" sm="6" md="6" lg="6">
                     <MovetRise>
@@ -124,6 +125,7 @@ const Projects = () => (
                     </MovetRise>
                 </Column>
             </Row>
+            <ContactForm className="pt-10" />
         </div>
     </ProjectsWrapper>
 )

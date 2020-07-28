@@ -34,7 +34,7 @@ const ContactForm = () => {
     return (
         <div>
          <div className="col-md-8 mt-5">
-            <h3>Getform.io Gatsby Form Example</h3>
+            <h3>Send me a message!</h3>
             <form onSubmit={handleOnSubmit}>
             <div className="form-group">
                 <label for="exampleInputEmail1" required="required">Email address</label>
