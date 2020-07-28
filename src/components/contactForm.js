@@ -44,11 +44,11 @@ const ContactForm = () => {
                 <input type="text" name="name" className="form-control" id="exampleInputName" placeholder="Enter your name" required="required"/>
             </div>
             <div className="form-group">
-                <label for="exampleFormControlSelect1">Favourite Platform</label>
+                <label for="exampleFormControlSelect1">What's up?</label>
                 <select className="form-control" id="exampleFormControlSelect1" name="platform" required="required">
-                <option>Github</option>
-                <option>Gitlab</option>
-                <option>Bitbucket</option>
+                <option>Just saying hi</option>
+                <option>Would like to chat</option>
+                <option>I like your site!</option>
                 </select>
             </div>
             <button type="submit" className="btn btn-primary"  disabled={serverState.submitting}>
