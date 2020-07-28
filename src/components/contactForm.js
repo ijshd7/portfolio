@@ -32,8 +32,7 @@ const ContactForm = () => {
         });
     };
     return (
-        <div>
-         <div className="col-md-8 mt-5">
+        <div className="rounded-sm border-black border-2 mt-5">
             <h3>Send me a message!</h3>
             <form onSubmit={handleOnSubmit}>
             <div className="form-group">
@@ -62,7 +61,6 @@ const ContactForm = () => {
             )}
             </form>
         </div>
-      </div>
     );
   };
   
