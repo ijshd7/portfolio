@@ -32,8 +32,8 @@ const ContactForm = () => {
         });
     };
     return (
-        <div className="rounded-sm border-black border-2 mt-5">
-            <h3>Send me a message!</h3>
+        <div className="rounded-sm border-black border-2 mt-8 mx-64">
+            <h3>Let's Chat!</h3>
             <form onSubmit={handleOnSubmit}>
             <div className="form-group">
                 <label for="exampleInputEmail1" required="required">Email address</label>
@@ -46,8 +46,8 @@ const ContactForm = () => {
             <div className="form-group">
                 <label for="exampleFormControlSelect1">What's up?</label>
                 <select className="form-control" id="exampleFormControlSelect1" name="platform" required="required">
-                <option>Just saying hi</option>
                 <option>Would like to chat</option>
+                <option>Just saying hi</option>
                 <option>I like your site!</option>
                 </select>
             </div>
