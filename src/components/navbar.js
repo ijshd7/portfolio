@@ -67,12 +67,12 @@ const App = () => (
     <NavItem
       icon={<a href="https://codepen.io/ijshd7" target="_blank" aria-label="Codepen" rel="noreferrer"><CodepenIcon /></a>} />
     <NavItem
-      icon={<a href="https://github.com/ijshd7" target="_blank" aria-label="Github" rel="noreferrer"><FontAwesomeIcon icon={['fab', 'github']} /></a>} />
+      icon={<a href="https://github.com/ijshd7" target="_blank" aria-label="Github" rel="noreferrer" className="h-full w-full"><FontAwesomeIcon className="h-full w-full" icon={['fab', 'github']} /></a>} />
     <NavItem
       icon={<a href="mailto:ijshd7@mail.missouri.edu" target="_blank" aria-label="Email" rel="noreferrer"><MessengerIcon /></a>} />
     <NavItem icon={<Link to="/"><Logo /></Link>} />
     <NavItem icon={<CaretIcon />}>
-      <DropdownMenu></DropdownMenu>
+      <DropdownMenu />
     </NavItem>
   </Navbar>
   </>
