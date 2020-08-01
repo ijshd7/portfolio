@@ -2,6 +2,9 @@ import React, { useState, useEffect, useRef } from 'react'
 import styled, { createGlobalStyle } from 'styled-components'
 import { Link } from "gatsby"
 import { CSSTransition } from 'react-transition-group'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import "../styles/transitions.css"
 import logo from "../images/isaiah-logo-white.png"
 import MessengerIcon from '../svg/messenger.svg'
@@ -12,6 +15,8 @@ import EmailIcon from "../svg/email.svg"
 import LinkedinIcon from "../svg/linkedin.svg"
 import CodepenIcon from "../svg/codepen.svg"
 import PhoneIcon from "../svg/phone.svg"
+
+library.add(fab)
 
 const GlobalStyles = createGlobalStyle`
   body {
@@ -61,6 +66,8 @@ const App = () => (
       icon={<a href="https://www.linkedin.com/in/isaiah-sherrill-ab58b970" target="_blank" aria-label="LinkedIn" rel="noreferrer"><LinkedinIcon /></a>} />
     <NavItem
       icon={<a href="https://codepen.io/ijshd7" target="_blank" aria-label="Codepen" rel="noreferrer"><CodepenIcon /></a>} />
+    <NavItem
+      icon={<a href="https://github.com/ijshd7" target="_blank" aria-label="Github" rel="noreferrer"><FontAwesomeIcon icon={['fab', 'github']} /></a>} />
     <NavItem
       icon={<a href="mailto:ijshd7@mail.missouri.edu" target="_blank" aria-label="Email" rel="noreferrer"><MessengerIcon /></a>} />
     <NavItem icon={<Link to="/"><Logo /></Link>} />
