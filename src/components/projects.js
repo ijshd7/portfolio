@@ -125,7 +125,6 @@ const Projects = () => (
                     </MovetRise>
                 </Column>
             </Row>
-            <ContactForm className="pt-10" />
         </div>
     </ProjectsWrapper>
 )
