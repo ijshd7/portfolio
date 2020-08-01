@@ -33,7 +33,7 @@ const ContactForm = () => {
     };
     return (
       <>
-        <h1 className="text-center font-sans text-lg font-bold mt-4 mb-6">Let's Chat!</h1>
+        <h1 className="text-center font-sans text-5xl font-thin mt-6 mb-6">Let's Chat!</h1>
         <div className="text-center m-auto flex justify-center align-middle w-3/5">
             <form
               className="w-full max-w-sm"
@@ -80,14 +80,14 @@ const ContactForm = () => {
                     />
                 </div>
               </div>
-              <div className="">
+              <div className="md:flex md:items-center mb-4">
                   <label
-                    className="font-sans text-lg font-bold"
+                    className="font-sans text-xl font-light md:w-2/3"
                     for="exampleFormControlSelect1"
                   >
                     What should we talk about?
                   </label>
-                  <select className="text-green-500" id="exampleFormControlSelect1" name="platform" required="required">
+                  <select className="text-green-500 font-extrabold outline-none" id="exampleFormControlSelect1" name="platform" required="required">
                     <option>Web Development</option>
                     <option>Suggestions</option>
                     <option>I like your site!</option>
