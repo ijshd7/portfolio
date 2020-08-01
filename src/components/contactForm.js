@@ -32,36 +32,63 @@ const ContactForm = () => {
         });
     };
     return (
-        <div>
-            <h3 className="mt-2">Let's Chat!</h3>
+        <div className="text-center m-auto w-3/5">
+            <h3>Let's Chat!</h3>
             <form
-              className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+              className="w-full max-w-sm"
               onSubmit={handleOnSubmit}
             >
-            <div className="form-group">
-                <label for="exampleInputEmail1" required="required">Email address</label>
-                <input type="email" name="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
-            </div> 
-            <div className="form-group">
-                <label for="exampleInputName">Name</label>
-                <input type="text" name="name" className="form-control" id="exampleInputName" placeholder="Enter your name" required="required"/>
-            </div>
-            <div className="form-group">
-                <label for="exampleFormControlSelect1">What's up?</label>
-                <select className="form-control" id="exampleFormControlSelect1" name="platform" required="required">
-                <option>Would like to chat</option>
-                <option>Just saying hi</option>
-                <option>I like your site!</option>
-                </select>
-            </div>
-            <button type="submit" className="my-4 bg-green-400 hover:bg-green-500 text-white font-bold py-2 px-4 rounded"  disabled={serverState.submitting}>
-                Submit
-            </button>
-            {serverState.status && (
-                <p className={!serverState.status.ok ? "errorMsg" : ""}>
-                {serverState.status.msg}
-                </p>
-            )}
+              <div className="">
+                <label
+                  for="exampleInputEmail1"
+                  required="required"
+                  className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
+                >
+                  Email address
+                </label>
+              </div>
+              <div className="">
+                  <input
+                    type="email"
+                    name="email"
+                    className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Enter email"
+                  />
+              </div>
+              <div className="mb-6">
+                  <label
+                    for="exampleInputName"
+                    className="block text-gray-700 text-sm font-bold mb-2"
+                  >
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    name="name"
+                    className="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                    id="exampleInputName"
+                    placeholder="Enter your name"
+                    required="required"
+                  />
+              </div>
+              <div className="form-group">
+                  <label for="exampleFormControlSelect1">What's up?</label>
+                  <select className="form-control" id="exampleFormControlSelect1" name="platform" required="required">
+                  <option>Would like to chat</option>
+                  <option>Just saying hi</option>
+                  <option>I like your site!</option>
+                  </select>
+              </div>
+              <button type="submit" className="my-4 bg-green-400 hover:bg-green-500 text-white font-bold py-2 px-4 rounded"  disabled={serverState.submitting}>
+                  Submit
+              </button>
+              {serverState.status && (
+                  <p className={!serverState.status.ok ? "errorMsg" : ""}>
+                  {serverState.status.msg}
+                  </p>
+              )}
             </form>
         </div>
     );
