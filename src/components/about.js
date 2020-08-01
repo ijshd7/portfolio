@@ -48,7 +48,7 @@ const AboutGrid = () => (
                 <p className="mt-2" style={{fontSize: "2vh"}}>I build websites, web apps, and software</p>
                 <br />
                 <p style={{fontSize: "3vh"}} className="text-red-500 mt-2">Core Technologies:</p>
-                <p style={{fontSize: "2vh"}} className="mt-2 mx-10">HTML, CSS, URLs, HTTP, JavaScript, JSON, DOM, Web APIs, WCAG, and ARIA</p>
+                <p style={{fontSize: "2vh"}} className="mt-2 mx-10">HTML, CSS, URLs, HTTP, JavaScript, JSON, DOM, Web APIs, and ARIA</p>
             </Column>
             <Column xs="12" sm="4" md="6" lg="6" className="my-4 text-center">
                 <FontAwesomeIcon
