@@ -42,7 +42,7 @@ const ContactForm = () => {
               <div className="md:flex md:items-center mb-6">
                 <div className="md:w-1/3">
                   <label
-                    for="exampleInputEmail1"
+                    htmlFor="inputEmail"
                     required="required"
                     className="block text-green-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
                   >
@@ -54,8 +54,9 @@ const ContactForm = () => {
                       type="email"
                       name="email"
                       className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-green-500"
-                      id="exampleInputEmail1"
+                      id="inputEmail"
                       aria-describedby="emailHelp"
+                      aria-label="Enter email here"
                       placeholder="Enter email"
                     />
                 </div>
@@ -63,7 +64,7 @@ const ContactForm = () => {
               <div className="md:flex md:items-center mb-6">
                 <div className="md:w-1/3">
                     <label
-                      for="exampleInputName"
+                      htmlFor="inputName"
                       className="block text-green-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
                     >
                       Name
@@ -74,8 +75,9 @@ const ContactForm = () => {
                       type="text"
                       name="name"
                       className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-green-500"
-                      id="exampleInputName"
+                      id="inputName"
                       placeholder="Enter your name"
+                      aria-label="Enter your name here"
                       required="required"
                     />
                 </div>
@@ -83,11 +85,11 @@ const ContactForm = () => {
               <div className="md:flex md:items-center mb-4">
                   <label
                     className="font-sans text-xl font-light md:w-2/3"
-                    for="exampleFormControlSelect1"
+                    htmlFor="formControlSelect"
                   >
                     What should we talk about?
                   </label>
-                  <select className="text-green-500 font-extrabold outline-none" id="exampleFormControlSelect1" name="platform" required="required">
+                  <select className="text-green-500 font-extrabold outline-none" id="formControlSelect" name="platform" required="required">
                     <option>Web Development</option>
                     <option>Suggestions</option>
                     <option>I like your site!</option>

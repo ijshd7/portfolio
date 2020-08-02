@@ -5,7 +5,6 @@ import movetIphone1 from "../images/movetiphone.png"
 import movetIphone2 from "../images/movetiphone2.png"
 import riseLogo from "../images/riselogo.png"
 import RiseCarousel from "./riseCarousel"
-import ContactForm from "./contactForm"
 
 const Row = styled.div`
     &::after {
@@ -58,6 +57,8 @@ const Movet = ({source1, source2}) => (
             src={source1}
             onMouseOver={e => (e.currentTarget.src = source2)}
             onMouseOut={e => (e.currentTarget.src = source1)}
+            onFocus={e => (e.currentTarget.src = source2)}
+            onBlur={e => (e.currentTarget.src = source1)}
         />
         <a
             href="https://apps.apple.com/us/app/movet-on-demand-vet-services/id1478031556"
