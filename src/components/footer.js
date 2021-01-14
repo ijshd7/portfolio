@@ -89,7 +89,7 @@ const Footer = () => (
             style={{fontSize: "4vh"}}
             className="text-center text-white mt-10 pb-4 font-mono antialiased"
         >
-            Created with love by Isaiah 2020
+            Created with love by Isaiah {new Date().getFullYear()}
         </p>
     </FooterWrapper>
 )

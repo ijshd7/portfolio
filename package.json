@@ -1,8 +1,8 @@
 {
   "name": "isaiah-sherrill-portfolio",
   "private": false,
-  "description": "My Portfolio Website",
-  "version": "1.0.2",
+  "description": "Isaiah's Portfolio Website",
+  "version": "1.0.3",
   "author": "Isaiah Sherrill",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
