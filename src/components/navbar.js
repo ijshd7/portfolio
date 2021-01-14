@@ -55,7 +55,7 @@ const ImgWrapper = styled.img`
 `
 
 const Logo = () => (
-  <ImgWrapper src={logo} alt="Cat logo" />
+  <ImgWrapper width="20px" height="20px" src={logo} alt="Cat logo" />
 )
 
 const App = () => (

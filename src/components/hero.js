@@ -25,8 +25,8 @@ const Hero = () => (
     <HeroWrapper>
         <h1 style={{fontSize: "8vh"}}>Hi, my name is Isaiah!</h1>
         <p className="mt-2" style={{fontSize: "5vh"}}>I build things</p>
-        <img className="my-16 mx-auto block" src={avatar} alt="My avatar" width="25%" />
-        <img className="mt-12 mx-auto block" src={computer} alt="Computer" width="50%" />
+        <img className="my-16 mx-auto block" src={avatar} alt="My avatar" height="auto" width="25%" />
+        <img className="mt-12 mx-auto block" src={computer} alt="Computer" height="auto" width="50%" />
     </HeroWrapper>
 )
 
