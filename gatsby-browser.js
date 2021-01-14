@@ -1,7 +1,7 @@
-import "./src/styles/globals.css"
+import React from 'react';
+import "./src/styles/globals.css";
+import Layout from './src/components/layout';
 
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/browser-apis/
- */
+export function wrapPageElement({ element, props }) {
+    return <Layout {...props}>{element}</Layout>;
+}
