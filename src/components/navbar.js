@@ -253,4 +253,4 @@ function DropdownMenu() {
   );
 }
 
-export default Navbar;
+export default App;
