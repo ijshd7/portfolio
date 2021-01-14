@@ -40,6 +40,9 @@
     "gh-pages": "^3.1.0",
     "prettier": "^2.2.1"
   },
+  "peerDependencies": {
+    "postcss": "^8.0.0"
+  },
   "keywords": [
     "gatsby",
     "tailwind",
@@ -54,7 +57,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "flush": "rm -rf node_modules && npm cache clean --force"
   },
   "repository": {
     "type": "git",

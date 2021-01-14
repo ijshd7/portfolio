@@ -1,5 +1,5 @@
 module.exports = {
-  purge: [],
+  purge: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     maxHeight: {
       '3r': '3rem'
@@ -7,5 +7,5 @@ module.exports = {
     extend: {},
   },
   variants: {},
-  plugins: [],
+  plugins: ['gatsby-plugin-postcss'],
 }
