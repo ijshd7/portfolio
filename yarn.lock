@@ -2567,7 +2567,7 @@
   "resolved" "https://registry.npmjs.org/atob/-/atob-2.1.2.tgz"
   "version" "2.1.2"
 
-"autoprefixer@^10.0.2", "autoprefixer@^9.8.4":
+"autoprefixer@^10.0.2", "autoprefixer@^9.8.4", "autoprefixer@^9.8.6":
   "integrity" "sha512-XrvP4VVHdRBCdX1S3WXVD8+RyG9qeb1D5Sn1DeLiG2xfSpzellk5k54xbUERJ3M5DggQxes39UGOTP8CFrEGbg=="
   "resolved" "https://registry.npmjs.org/autoprefixer/-/autoprefixer-9.8.6.tgz"
   "version" "9.8.6"
@@ -11433,7 +11433,16 @@
     "source-map" "^0.6.1"
     "supports-color" "^5.4.0"
 
-"postcss@^7.0.0", "postcss@^7.0.0 || ^8.0.1", "postcss@^7.0.1", "postcss@^7.0.26", "postcss@^7.0.27", "postcss@^7.0.32", "postcss@^7.0.35", "postcss@^8.0.5", "postcss@^8.0.9", "postcss@^8.1.13":
+"postcss@^7.0.0 || ^8.0.1", "postcss@^8.0.5", "postcss@^8.0.9", "postcss@^8.1.13", "postcss@^8.1.6", "postcss@^8.2.1", "postcss@^8.2.4":
+  "integrity" "sha512-kRFftRoExRVXZlwUuay9iC824qmXPcQQVzAjbCCgjpXnkdMCJYBu2gTwAaFBzv8ewND6O8xFb3aELmEkh9zTzg=="
+  "resolved" "https://registry.npmjs.org/postcss/-/postcss-8.2.4.tgz"
+  "version" "8.2.4"
+  dependencies:
+    "colorette" "^1.2.1"
+    "nanoid" "^3.1.20"
+    "source-map" "^0.6.1"
+
+"postcss@^7.0.0":
   "integrity" "sha512-3QT8bBJeX/S5zKTTjTCIjRF3If4avAT6kqxcASlTWEtAFCb9NH0OUxNDfgZSWdP5fJnBYCMEWkIFfWeugjzYMg=="
   "resolved" "https://registry.npmjs.org/postcss/-/postcss-7.0.35.tgz"
   "version" "7.0.35"
@@ -11442,23 +11451,41 @@
     "source-map" "^0.6.1"
     "supports-color" "^6.1.0"
 
-"postcss@^8.1.6":
-  "integrity" "sha512-kRFftRoExRVXZlwUuay9iC824qmXPcQQVzAjbCCgjpXnkdMCJYBu2gTwAaFBzv8ewND6O8xFb3aELmEkh9zTzg=="
-  "resolved" "https://registry.npmjs.org/postcss/-/postcss-8.2.4.tgz"
-  "version" "8.2.4"
+"postcss@^7.0.1":
+  "integrity" "sha512-3QT8bBJeX/S5zKTTjTCIjRF3If4avAT6kqxcASlTWEtAFCb9NH0OUxNDfgZSWdP5fJnBYCMEWkIFfWeugjzYMg=="
+  "resolved" "https://registry.npmjs.org/postcss/-/postcss-7.0.35.tgz"
+  "version" "7.0.35"
   dependencies:
-    "colorette" "^1.2.1"
-    "nanoid" "^3.1.20"
+    "chalk" "^2.4.2"
     "source-map" "^0.6.1"
+    "supports-color" "^6.1.0"
 
-"postcss@^8.2.1":
-  "integrity" "sha512-kRFftRoExRVXZlwUuay9iC824qmXPcQQVzAjbCCgjpXnkdMCJYBu2gTwAaFBzv8ewND6O8xFb3aELmEkh9zTzg=="
-  "resolved" "https://registry.npmjs.org/postcss/-/postcss-8.2.4.tgz"
-  "version" "8.2.4"
+"postcss@^7.0.26":
+  "integrity" "sha512-3QT8bBJeX/S5zKTTjTCIjRF3If4avAT6kqxcASlTWEtAFCb9NH0OUxNDfgZSWdP5fJnBYCMEWkIFfWeugjzYMg=="
+  "resolved" "https://registry.npmjs.org/postcss/-/postcss-7.0.35.tgz"
+  "version" "7.0.35"
   dependencies:
-    "colorette" "^1.2.1"
-    "nanoid" "^3.1.20"
+    "chalk" "^2.4.2"
     "source-map" "^0.6.1"
+    "supports-color" "^6.1.0"
+
+"postcss@^7.0.27":
+  "integrity" "sha512-3QT8bBJeX/S5zKTTjTCIjRF3If4avAT6kqxcASlTWEtAFCb9NH0OUxNDfgZSWdP5fJnBYCMEWkIFfWeugjzYMg=="
+  "resolved" "https://registry.npmjs.org/postcss/-/postcss-7.0.35.tgz"
+  "version" "7.0.35"
+  dependencies:
+    "chalk" "^2.4.2"
+    "source-map" "^0.6.1"
+    "supports-color" "^6.1.0"
+
+"postcss@^7.0.32":
+  "integrity" "sha512-3QT8bBJeX/S5zKTTjTCIjRF3If4avAT6kqxcASlTWEtAFCb9NH0OUxNDfgZSWdP5fJnBYCMEWkIFfWeugjzYMg=="
+  "resolved" "https://registry.npmjs.org/postcss/-/postcss-7.0.35.tgz"
+  "version" "7.0.35"
+  dependencies:
+    "chalk" "^2.4.2"
+    "source-map" "^0.6.1"
+    "supports-color" "^6.1.0"
 
 "potrace@^2.1.8":
   "integrity" "sha512-V9hI7UMJyEhNZjM8CbZaP/804ZRLgzWkCS9OOYnEZkszzj3zKR/erRdj0uFMcN3pp6x4B+AIZebmkQgGRinG/g=="
