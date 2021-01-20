@@ -33,7 +33,7 @@ const ContactForm = () => {
     };
     return (
       <>
-        <h1 className="text-center font-sans text-5xl font-thin mt-6 mb-6">Want to know more? Let's Chat!</h1>
+        <h1 className="text-center font-sans text-5xl font-thin mt-6 mb-6">Want to know more? Let&apos;s Chat!</h1>
         <div className="text-center m-auto flex justify-center align-middle w-3/5">
             <form
               className="w-full max-w-sm"
