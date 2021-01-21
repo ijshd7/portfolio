@@ -191,7 +191,7 @@ function DropdownMenu() {
   const dropdownRef = useRef(null);
 
   useEffect(() => {
-    setMenuHeight(dropdownRef.current?.firstChild.offsetHeight)
+    setMenuHeight(dropdownRef.current.firstChild.offsetHeight)
   }, [])
 
   const calcHeight = (el) => {

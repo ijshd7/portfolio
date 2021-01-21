@@ -48,7 +48,7 @@ const ProjectsWrapper = styled.section`
     padding-bottom: 4rem;
 `
 
-const Movet = ({source1, source2}) => (
+const Movet = (source1, source2) => (
     <div>
         <img
             className="block"

@@ -24,7 +24,7 @@ const ContactForm = () => {
         url: "https://getform.io/f/4113f349-e99f-495a-b529-18c2cb40e11c",
         data: new FormData(form)
       })
-        .then(r => {
+        .then(() => {
           handleServerResponse(true, "Thanks!", form);
         })
         .catch(r => {
