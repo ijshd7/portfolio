@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
-import styled, { createGlobalStyle } from 'styled-components'
+import styled from 'styled-components'
 import { Link } from "gatsby"
 import { CSSTransition } from 'react-transition-group'
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -18,36 +18,6 @@ import PhoneIcon from "../svg/phone.svg"
 
 library.add(fab)
 
-const GlobalStyles = createGlobalStyle`
-  body {
-    margin: 0;
-    font-family: roboto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-      monospace;
-  }
-  
-  :root {
-    --bg:  #242526;
-    --bg-accent: #484a4d;
-    --text-color: #dadce1;
-    --nav-size: 60px;
-    --border: 1px solid #474a4d;
-    --border-radius: 8px;
-    --speed: 500ms; 
-  }
-
-  svg { 
-    fill: var(--text-color);
-    width: 20px;
-    height: 20px;
-  }
-`
-
 const ImgWrapper = styled.img`
   fill: var(--text-color);
   width: 20px;
@@ -59,8 +29,6 @@ const Logo = () => (
 )
 
 const App = () => (
-  <>
-  <GlobalStyles />
   <Navbar>
     <NavItem
       icon={<a href="https://www.linkedin.com/in/isaiah-sherrill-ab58b970" target="_blank" aria-label="LinkedIn" rel="noreferrer"><LinkedinIcon /></a>} />
@@ -75,7 +43,6 @@ const App = () => (
       <DropdownMenu />
     </NavItem>
   </Navbar>
-  </>
 )
 
 const Navbar = (props) => (

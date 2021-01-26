@@ -1,6 +1,4 @@
 import React from 'react';
-import "./src/styles/globals.css";
-import "./src/styles/transitions.css"
 import Layout from './src/components/layout';
 
 export function wrapPageElement({ element, props }) {
