@@ -33,7 +33,7 @@ const GlobalStyles = createGlobalStyle`
   }
 `
 
-export default function Layout( children ) {
+export default function Layout({ children }) {
     return (
         <>
             <GlobalStyles />
