@@ -1,17 +1,28 @@
 import React from "react";
 
+// body selector? would that apply in a component..?
+
 const blackBackground = {
     backgroundColor: '#17141d'
   };
 
-const Card = () => {
+const cardBackground = {
+    backgroundColor: '#17141d',
+    boxShadow: '-1rem 0 3rem #000'
+};
+
+const cardParaColor = {
+    color: '#7a7a8c'
+};
+
+const Card = (props) => {
     return (
         <div className="p-0 m-0 text-white font-mono" style={blackBackground}>
             <section className="flex p-12 overflow-x-scroll">
-                <article class="card">
-                    <header class="card-header">
-                        <p>Jan 14th 2021</p>
-                        <h2>Hello World!</h2>
+                <article className="flex relative flex-col h-80 w-96 p-6 rounded-2xl duration-200 hover:transform" style={cardBackground}>
+                    <header class="mb-auto">
+                        <p className="text-sm mt-0 mx-0 mb-4" style={cardParaColor}>{props.date}</p>
+                        <h2 className="text-xl mt-1 mx-0 mb-auto cursor-pointer">{props.title}</h2>
                     </header>
                     <div class="card-author">
                         <a class="author-avatar" href="#">
