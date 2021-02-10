@@ -1,10 +1,10 @@
 import React from "react"
-import Hero from "../components/hero"
+import ProjectGallery from "../components/projectGallery"
 
 export default function IndexPage() {
   return (
     <>
-      <Hero />
+      <ProjectGallery />
     </>
   );
 }
