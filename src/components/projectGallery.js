@@ -1,10 +1,14 @@
 import React from 'react';
-import Card from './card';
+import GalleryItem from './galleryItem';
 
 const ProjectGallery =() => {
     return (
-        <div className="h-screen bg-gray-700 p-0 m-0">
-            <Card />
+        <div className="w-full h-screen flex flex-wrap">
+            <GalleryItem text="Item 1" />
+            <GalleryItem text="Item 2" />
+            <GalleryItem text="Item 3" />
+            <GalleryItem text="Item 4" />
+            <GalleryItem text="Item 5" />
         </div>
     );
 }
