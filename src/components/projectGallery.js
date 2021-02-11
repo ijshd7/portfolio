@@ -1,16 +1,11 @@
 import React from 'react';
-import styled from 'styled-components';
-import '../styles/global.css';
+import Card from './card';
 
 const ProjectGallery =() => {
     return (
-        <section className="h-screen">
-            <div className="mt-7 text-center">
-                <div className="">T E S T</div>
-                <div className="">T E S T</div>
-                <div className="">T E S T</div>
-            </div>
-        </section>
+        <div className="h-screen bg-gray-700 p-0 m-0">
+            <Card />
+        </div>
     );
 }
 
