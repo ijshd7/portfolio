@@ -34,8 +34,10 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "react-responsive-carousel": "^3.2.11",
+    "react-responsive-carousel": "^3.2.12",
+    "react-slick": "^0.28.0",
     "react-transition-group": "^4.4.1",
+    "slick-carousel": "^1.8.1",
     "styled-components": "^5.2.1",
     "tailwind.macro": "^0.5.10",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
