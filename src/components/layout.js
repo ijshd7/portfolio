@@ -4,6 +4,11 @@ import Navbar from "../components/navbar"
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
   body {
     margin: 0;
     font-family: roboto;
