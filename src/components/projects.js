@@ -26,19 +26,21 @@ const Projects = () => (
             <h1 style={{fontSize: "8vh"}} className="mb-10">PROFESSIONAL PROJECTS</h1>
             <div className="flex-col lg:flex lg:flex-row mb-4">
                 <div className="w-2/3 mb-6 lg:w-1/4 mx-auto">
-                    <img className="" src={floating1} alt="Floating STL screenshot"/>
-                    <a href="https://www.floatingstl.com/" target="_blank" rel="noreferrer">
-                        <img className="mt-2 w-1/2 mx-auto" src={floatingLogo} alt="Floating STL logo"/>
+                    <div className="relative">
+                        <img className="rounded-lg hover:opacity-50 transition-all duration-300 ease-linear" src={floating1} alt="Floating STL screenshot"/>
+                    </div>
+                    <a className="" href="https://www.floatingstl.com/" target="_blank" rel="noreferrer">
+                        <img className="mt-4 w-1/2 mx-auto" src={floatingLogo} alt="Floating STL logo"/>
                     </a>
                 </div>
                 <div className="w-2/3 mb-6 lg:w-1/4 mx-auto">
-                    <img className="" src={dogwood1} alt="Dogwood Compliance screenshot"/>
+                    <img className="rounded-lg hover:opacity-50 transition-all duration-300 ease-linear" src={dogwood1} alt="Dogwood Compliance screenshot"/>
                     <a href="https://dogwoodcompliance.com/" target="_blank" rel="noreferrer">
                         <img className="mt-2 mx-auto" src={dogwoodLogo} alt="Dogwood Compliance logo"/>
                     </a>
                 </div>
                 <div className="w-2/3 lg:w-1/4 mx-auto">
-                    <img className="" src={rise1} alt="Rise Float Gathering screenshot"/>
+                    <img className="rounded-lg hover:opacity-50 transition-all duration-300 ease-linear" src={rise1} alt="Rise Float Gathering screenshot"/>
                     <a href="https://risefloatgathering.com/" target="_blank" rel="noreferrer">
                         <img className="mt-2 w-1/2 mx-auto" src={riseLogo} alt="Rise Float Gathering logo"/>
                     </a>
@@ -46,13 +48,13 @@ const Projects = () => (
             </div>
             <div className="flex-col lg:flex lg:flex-row mt-6">
                 <div className="w-2/3 lg:w-1/3 mx-auto mb-6">
-                    <img className="" src={coach1} alt="Elevated Coaching screenshot"/>
+                    <img className="rounded-lg hover:opacity-50 transition-all duration-300 ease-linear" src={coach1} alt="Elevated Coaching screenshot"/>
                     <a href="https://mycoachkevin.com/" target="_blank" rel="noreferrer">
                         <img className="mt-2 w-1/2 mx-auto" src={coachLogo} alt="Elevated Coaching logo"/>
                     </a>
                 </div>
                 <div className="w-2/3 lg:w-1/3 mx-auto mb-6">
-                    <img className="sm:h-1/3 lg:h-2/3 mx-auto" src={movet1} alt="Movet screenshot"/>
+                    <img className="sm:h-1/3 lg:h-2/3 mx-auto rounded-lg hover:opacity-50 transition-all duration-300 ease-linear" src={movet1} alt="Movet screenshot"/>
                     <a href="https://movetcare.com/" target="_blank" rel="noreferrer">
                         <img className="mt-2 mx-auto" src={movetLogo} alt="Movet logo"/>
                     </a>
