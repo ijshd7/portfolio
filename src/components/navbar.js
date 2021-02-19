@@ -28,7 +28,7 @@ const Logo = () => (
   <ImgWrapper width="20px" height="20px" src={logo} alt="Cat logo" />
 )
 
-const App = () => (
+const NavigationBar = () => (
   <Navbar>
     <NavItem
       icon={<a href="https://www.linkedin.com/in/isaiah-sherrill-ab58b970" target="_blank" aria-label="LinkedIn" rel="noreferrer"><LinkedinIcon /></a>} />
@@ -56,6 +56,9 @@ const Nav = styled.nav`
   background-color: var(--bg);
   padding: 0 1rem;
   border-bottom: var(--border);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 `
 
 const NavNav = styled.ul`
@@ -220,4 +223,4 @@ function DropdownMenu() {
   );
 }
 
-export default App;
+export default NavigationBar;
