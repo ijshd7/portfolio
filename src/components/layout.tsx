@@ -1,6 +1,6 @@
 import React from "react"
-import Footer from "../components/footer"
-import Navbar from "../components/navbar"
+import Footer from "./footer"
+import Navbar from "./navbar"
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
