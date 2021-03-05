@@ -76,7 +76,7 @@ const NavItem = (props) => {
 
   return (
     <NavItemLi>
-      <IconButtonA href="#" onClick={() => setOpen(!open)}>
+      <IconButtonA aria-label="icon" href="#" onClick={() => setOpen(!open)}>
         {props.icon}
       </IconButtonA>
 
