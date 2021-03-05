@@ -1,8 +1,11 @@
 module.exports = {
-  pathPrefix: "/portfolio",
+  pathPrefix: "/",
   siteMetadata: {
-    title: `Isaiah's Portfolio Page`,
-    description: `My portfolio`,
+    siteName: `Isaiah Sherrill Dot Com`,
+    title: `isaiahsherrill.com`,
+    url: `https://www.isaiahsherrill.com`,
+    image: `/images/isaiah-logo-white.png`,
+    description: `Isaiah Sherrill's website`,
     author: `Isaiah Sherrill`,
   },
   plugins: [
@@ -48,4 +51,7 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
+  flags: {
+    DEV_SSR: false,
+  }
 }
