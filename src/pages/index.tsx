@@ -6,6 +6,9 @@ import About from '../components/about';
 import Projects from '../components/projects';
 import ContactForm from '../components/contactForm';
 
+// add SEO component
+// https://www.gatsbyjs.com/docs/add-seo-component/
+
 export default function IndexPage() {
   return (
     <>
