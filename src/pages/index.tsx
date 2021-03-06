@@ -4,10 +4,12 @@ import Introduction from '../components/introduction';
 import About from '../components/about';
 import Projects from '../components/projects';
 import ContactForm from '../components/contactForm';
+import SEO from '../components/seo';
 
-export default function IndexPage() {
+const IndexPage = () => {
   return (
     <>
+      <SEO />
       <Hero />
       <Introduction />
       <About />
@@ -16,3 +18,4 @@ export default function IndexPage() {
     </>
   );
 }
+export default IndexPage;
