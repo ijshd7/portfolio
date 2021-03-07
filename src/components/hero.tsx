@@ -1,7 +1,9 @@
-import React from "react"
-import styled from "styled-components"
-import avatar from "../images/southParkAvatar.jpg"
-import computer from "../images/computer.png"
+import React from "react";
+import styled from "styled-components";
+import avatarJpg from "../images/southParkAvatar.jpg";
+import avatarWebp from "../images/southParkAvatar.webp";
+import computerPng from "../images/computer.png";
+import computerWebp from "../images/computer.webp";
 
 const HeroWrapper = styled.section`
     background-color: white;
@@ -25,8 +27,16 @@ const Hero = () => (
     <HeroWrapper>
         <h1 style={{fontSize: "8vh"}}>Hi, my name is Isaiah!</h1>
         <p className="mt-2" style={{fontSize: "5vh"}}>I build things</p>
-        <img className="my-16 mx-auto block" src={avatar} alt="My avatar" height="auto" width="25%" />
-        <img className="mt-12 mx-auto block" src={computer} alt="Computer" height="auto" width="50%" />
+        <picture className="my-16 mx-auto block h-auto w-1/4">
+            <source type="image/webp" srcSet={avatarWebp}/>
+            <source type="image/jpg" srcSet={avatarJpg}/>
+            <img src={avatarJpg} alt="My avatar"/>
+        </picture>
+        <picture className="mt-12 mx-auto block h-auto w-1/2">
+            <source type="image/webp" srcSet={computerWebp}/>
+            <source type="image/png" srcSet={computerPng}/>
+            <img src={computerPng} alt="Computer"/>
+        </picture>
     </HeroWrapper>
 )
 
