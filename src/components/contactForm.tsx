@@ -44,7 +44,7 @@ const ContactForm = () => {
                   <label
                     htmlFor="inputEmail"
                     required="required"
-                    className="block text-green-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
+                    className="block text-green-700 font-bold md:text-right mb-1 md:mb-0 pr-4"
                   >
                     Email address
                   </label>
@@ -53,7 +53,7 @@ const ContactForm = () => {
                     <input
                       type="email"
                       name="email"
-                      className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-green-500"
+                      className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-green-700"
                       id="inputEmail"
                       aria-describedby="emailHelp"
                       aria-label="Enter email here"
@@ -65,7 +65,7 @@ const ContactForm = () => {
                 <div className="md:w-1/3">
                     <label
                       htmlFor="inputName"
-                      className="block text-green-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
+                      className="block text-green-700 font-bold md:text-right mb-1 md:mb-0 pr-4"
                     >
                       Name
                     </label>
@@ -74,7 +74,7 @@ const ContactForm = () => {
                     <input
                       type="text"
                       name="name"
-                      className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-green-500"
+                      className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-green-700"
                       id="inputName"
                       placeholder="Enter your name"
                       aria-label="Enter your name here"
@@ -89,13 +89,13 @@ const ContactForm = () => {
                   >
                     What should we talk about?
                   </label>
-                  <select className="text-green-500 font-extrabold outline-none" id="formControlSelect" name="platform" required="required">
+                  <select className="text-green-700 font-extrabold outline-none" id="formControlSelect" name="platform" required="required">
                     <option>Web Development</option>
                     <option>Suggestions</option>
                     <option>I like your site!</option>
                   </select>
               </div>
-              <button type="submit" className="mt-4 mb-8 text-lg text-green-400 bg-white border border-green-400 hover:border-transparent hover:bg-green-500 hover:text-white font-bold py-2 px-4 rounded-full"  disabled={serverState.submitting}>
+              <button type="submit" className="mt-4 mb-8 text-lg text-green-700 bg-white border border-green-700 hover:border-transparent hover:bg-green-500 hover:text-white font-bold py-2 px-4 rounded-full"  disabled={serverState.submitting}>
                   Submit
               </button>
               {serverState.status && (

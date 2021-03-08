@@ -47,7 +47,7 @@ const AboutGrid = () => (
                 <h1 className="mt-4" style={{fontSize: "3vh"}}>Developer</h1>
                 <p className="mt-2" style={{fontSize: "2vh"}}>I build websites, web apps, and software</p>
                 <br />
-                <p style={{fontSize: "3vh"}} className="text-red-500 mt-2">Core Technologies:</p>
+                <p style={{fontSize: "3vh"}} className="text-red-700 mt-2">Core Technologies:</p>
                 <p style={{fontSize: "2vh"}} className="mt-2 mx-10">HTML, CSS, URLs, HTTP, JavaScript, JSON, DOM, Web APIs, WCAG, and ARIA</p>
             </Column>
             <Column xs="12" sm="4" md="6" lg="6" className="my-4 text-center">
@@ -59,7 +59,7 @@ const AboutGrid = () => (
                 <h1 className="mt-4" style={{fontSize: "3vh"}}>Lifelong Learner</h1>
                 <p className="mt-2 mx-4" style={{fontSize: "2vh"}}>I love learning about the ecosystem of the web, and all the cool technologies it entails</p>
                 <br />
-                <p style={{fontSize: "3vh"}} className="text-green-400 mt-2">Libraries, Frameworks, Tools:</p>
+                <p style={{fontSize: "3vh"}} className="text-green-700 mt-2">Libraries, Frameworks, Tools:</p>
                 <p style={{fontSize: "2vh"}} className="mt-2 mx-10">React, React Native, Gatsby, Tailwindcss, JSX, Node.js, Data Formats, REST APIs, Package Managers, SPA/PWAs, Linting, and so many more </p>
             </Column>
             <Column xs="12" sm="4" md="6" lg="3" className="my-4 text-center">
@@ -71,7 +71,7 @@ const AboutGrid = () => (
                 <h1 className="mt-4" style={{fontSize: "3vh"}}>Cool Dude</h1>
                 <p className="mt-2" style={{fontSize: "2vh"}}>I truly enjoy meeting people from all walks of life and growing as a person</p>
                 <br />
-                <p style={{fontSize: "3vh"}} className="text-blue-500 mt-2">Experiences I draw from:</p>
+                <p style={{fontSize: "3vh"}} className="text-blue-700 mt-2">Experiences I draw from:</p>
                 <p style={{fontSize: "2vh"}} className="mt-2 mx-10">A career in healthcare, a burning interest in technology, and wanting to experience everything life has to offer</p>
             </Column>
         </Row>
