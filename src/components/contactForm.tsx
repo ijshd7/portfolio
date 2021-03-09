@@ -6,7 +6,7 @@ const ContactForm = () => {
       submitting: false,
       status: null
     });
-    const handleServerResponse = (ok, msg, form) => {
+    const handleServerResponse = (ok: any, msg: any, form: any) => {
       setServerState({
         submitting: false,
         status: { ok, msg }

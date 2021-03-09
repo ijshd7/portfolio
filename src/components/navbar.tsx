@@ -1,12 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react'
 import styled from 'styled-components'
-import { Link } from "gatsby"
 import { CSSTransition } from 'react-transition-group'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import "../styles/transitions.css"
-import logo from "../images/isaiah-logo-white.png"
 import MessengerIcon from '../svg/messenger.svg'
 import CaretIcon from '../svg/caret.svg'
 import ChevronIcon from '../svg/chevron.svg'
@@ -24,10 +22,6 @@ const ImgWrapper = styled.img`
   height: 20px;
 `
 
-const Logo = () => (
-  <ImgWrapper width="20px" height="20px" src={logo} alt="Cat logo" />
-)
-
 const NavigationBar = () => (
   <Navbar>
     <NavItem
@@ -37,8 +31,7 @@ const NavigationBar = () => (
     <NavItem
       icon={<a href="https://github.com/ijshd7" target="_blank" aria-label="Github" rel="noreferrer" className="h-full w-full"><FontAwesomeIcon className="h-full w-full" icon={['fab', 'github']} /></a>} />
     <NavItem
-      icon={<a href="mailto:ijshd7@mail.missouri.edu" target="_blank" aria-label="Email" rel="noreferrer"><MessengerIcon /></a>} />
-    <NavItem icon={<Link to="/"><Logo /></Link>} />
+      icon={<a href="mailto:me@isaiahsherrill.com" target="_blank" aria-label="Email" rel="noreferrer"><MessengerIcon /></a>} />
     <NavItem icon={<CaretIcon />}>
       <DropdownMenu />
     </NavItem>
@@ -188,10 +181,6 @@ function DropdownMenu() {
         onEnter={calcHeight}>
         <div className="menu">
           <DropdownItem
-            leftIcon={<Logo />}
-          >
-          </DropdownItem>
-          <DropdownItem
             leftIcon={<MessengerIcon />}
             rightIcon={<ChevronIcon />}
             goToMenu="contact">
@@ -210,7 +199,7 @@ function DropdownMenu() {
           <DropdownItem goToMenu="main" leftIcon={<ArrowIcon />}>
             <h2>Back</h2>
           </DropdownItem>
-          <a href="mailto:ijshd7@mail.missouri.edu" target="_blank" aria-label="Email" rel="noreferrer">
+          <a href="mailto:me@isaiahsherrill.com" target="_blank" aria-label="Email" rel="noreferrer">
             <DropdownItem leftIcon={<EmailIcon />}>Email</DropdownItem>
           </a>
           <a href="https://www.linkedin.com/in/isaiah-sherrill-ab58b970" target="_blank" aria-label="LinkedIn" rel="noreferrer">

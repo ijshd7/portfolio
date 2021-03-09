@@ -70,7 +70,7 @@ const Footer = () => (
             </div>
             <div className="mx-2 rounded-full h-12 w-12 flex items-center justify-center border border-white text-white hover:bg-white hover:text-black">
                 <a
-                    href="mailto:ijshd7@mail.missouri.edu"
+                    href="mailto:me@isaiahsherrill.com"
                     target="_blank"
                     rel="noreferrer"
                 >
