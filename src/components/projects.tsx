@@ -29,19 +29,19 @@ const Projects = () => (
                     <div className="relative">
                         <img className="rounded-lg hover:opacity-50 transition-all duration-300 ease-linear" src={floating1} alt="Floating STL screenshot"/>
                     </div>
-                    <a className="" href="https://www.floatingstl.com/" target="_blank" rel="noreferrer">
+                    <a className="" href="https://www.floatingstl.com/" target="_blank" aria-label="Floating STL" rel="noreferrer">
                         <img className="mt-4 w-1/2 mx-auto" src={floatingLogo} alt="Floating STL logo"/>
                     </a>
                 </div>
                 <div className="w-2/3 mb-6 lg:w-1/4 mx-auto">
                     <img className="rounded-lg hover:opacity-50 transition-all duration-300 ease-linear" src={dogwood1} alt="Dogwood Compliance screenshot"/>
-                    <a href="https://dogwoodcompliance.com/" target="_blank" rel="noreferrer">
+                    <a href="https://dogwoodcompliance.com/" target="_blank" aria-label="Dogwood Compliance" rel="noreferrer">
                         <img className="mt-2 mx-auto" src={dogwoodLogo} alt="Dogwood Compliance logo"/>
                     </a>
                 </div>
                 <div className="w-2/3 lg:w-1/4 mx-auto">
                     <img className="rounded-lg hover:opacity-50 transition-all duration-300 ease-linear" src={rise1} alt="Rise Float Gathering screenshot"/>
-                    <a href="https://risefloatgathering.com/" target="_blank" rel="noreferrer">
+                    <a href="https://risefloatgathering.com/" target="_blank" aria-label="Rise Float Gathering" rel="noreferrer">
                         <img className="mt-2 w-1/2 mx-auto" src={riseLogo} alt="Rise Float Gathering logo"/>
                     </a>
                 </div>
@@ -49,13 +49,13 @@ const Projects = () => (
             <div className="flex-col lg:flex lg:flex-row mt-6">
                 <div className="w-2/3 lg:w-1/3 mx-auto mb-6">
                     <img className="rounded-lg hover:opacity-50 transition-all duration-300 ease-linear" src={coach1} alt="Elevated Coaching screenshot"/>
-                    <a href="https://mycoachkevin.com/" target="_blank" rel="noreferrer">
+                    <a href="https://mycoachkevin.com/" target="_blank" aria-label="Elevated Coaching" rel="noreferrer">
                         <img className="mt-2 w-1/2 mx-auto" src={coachLogo} alt="Elevated Coaching logo"/>
                     </a>
                 </div>
                 <div className="w-2/3 lg:w-1/3 mx-auto mb-6">
                     <img className="sm:h-1/3 lg:h-2/3 mx-auto rounded-lg hover:opacity-50 transition-all duration-300 ease-linear" src={movet1} alt="Movet screenshot"/>
-                    <a href="https://movetcare.com/" target="_blank" rel="noreferrer">
+                    <a href="https://movetcare.com/" target="_blank" aria-label="Movet On Demand Pet Services" rel="noreferrer">
                         <img className="mt-2 mx-auto" src={movetLogo} alt="Movet logo"/>
                     </a>
                 </div>

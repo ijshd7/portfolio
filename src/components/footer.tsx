@@ -33,6 +33,7 @@ const Footer = () => (
                 <a
                     href="https://github.com/ijshd7"
                     target="_blank"
+                    aria-label="Github"
                     rel="noreferrer"
                 >
                     <FontAwesomeIcon
@@ -46,6 +47,7 @@ const Footer = () => (
                 <a
                     href="https://www.linkedin.com/in/isaiah-sherrill-ab58b970"
                     target="_blank"
+                    aria-label="LinkedIn"
                     rel="noreferrer"
                 >
                     <FontAwesomeIcon
@@ -59,6 +61,7 @@ const Footer = () => (
                 <a
                     href="https://codepen.io/ijshd7"
                     target="_blank"
+                    aria-label="Codepen"
                     rel="noreferrer"
                 >
                     <FontAwesomeIcon
@@ -72,6 +75,7 @@ const Footer = () => (
                 <a
                     href="mailto:me@isaiahsherrill.com"
                     target="_blank"
+                    aria-label="Email"
                     rel="noreferrer"
                 >
                     <FontAwesomeIcon
