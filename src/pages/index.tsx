@@ -1,19 +1,17 @@
 import React from "react";
-import Hero from '../components/hero';
-import Introduction from '../components/introduction';
-import About from '../components/about';
-import Projects from '../components/projects';
-import SEO from '../components/seo';
+
+// https://dribbble.com/shots/15291361-Toby-Brancher-Home-Desktop/attachments/7045604?mode=media
+// https://www.dejan.works/
 
 const IndexPage = () => {
   return (
-    <>
-      <SEO />
-      <Hero />
-      <Introduction />
-      <About />
-      <Projects />
-    </>
+    <section className="h-screen w-full bg-gray-900 font-serif">
+      <div className="text-left">
+        <h1 className="text-6xl text-white uppercase">Hello</h1>
+        <h1 className="text-6xl text-green-400 uppercase">I'm</h1>
+        <h1 className="text-6xl text-green-400 uppercase">Isaiah</h1>
+      </div>
+    </section>
   );
 }
 export default IndexPage;

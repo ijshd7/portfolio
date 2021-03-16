@@ -1,7 +1,7 @@
-import React from 'react';
+// import React from 'react';
 import './src/styles/global.css';
-import Layout from './src/components/layout';
+// import Layout from './src/components/layout';
 
-export function wrapPageElement({ element, props }) {
-    return <Layout {...props}>{element}</Layout>;
-}
+// export function wrapPageElement({ element, props }) {
+//     return <Layout {...props}>{element}</Layout>;
+// }
