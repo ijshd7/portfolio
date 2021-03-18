@@ -5,11 +5,11 @@ import React from "react";
 
 const IndexPage = () => {
   return (
-    <section className="h-screen w-full bg-gray-900 font-serif">
-      <div className="text-left">
-        <h1 className="text-6xl text-white uppercase">Hello</h1>
-        <h1 className="text-6xl text-green-400 uppercase">I'm</h1>
-        <h1 className="text-6xl text-green-400 uppercase">Isaiah</h1>
+    <section className="h-screen w-full flex flex-col justify-center bg-gray-900 font-serif">
+      <div className="text-left text-6xl lg:text-8xl ml-4 lg:ml-48">
+        <h1 className="text-white uppercase">Hello</h1>
+        <h1 className="text-green-400 uppercase my-4">I'm</h1>
+        <h1 className="text-green-400 uppercase">Isaiah</h1>
       </div>
     </section>
   );
