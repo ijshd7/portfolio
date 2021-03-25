@@ -5,13 +5,23 @@ import React from "react";
 
 const NewIndexPage = () => {
   return (
-    <section className="h-screen w-full flex flex-col justify-center bg-gray-900 font-serif">
-      <div className="text-left text-6xl lg:text-8xl ml-4 lg:ml-48">
+    <section className="h-screen w-full flex flex-col bg-gray-900 font-serif">
+      <div className="hidden lg:inline-flex space-x-20 pt-8 mx-8">
+        <div className="flex-1">
+          <hr className="border-gray-400"/>
+          <p className="text-white">Portfolio</p>
+        </div>
+        <div className="flex-1">
+          <hr className="border-gray-400"/>
+          <p className="text-white">Contact</p>
+        </div>
+      </div>
+      <div className="text-left text-6xl lg:text-8xl ml-4 lg:ml-48 my-auto">
         <h1 className="text-white uppercase">Hello</h1>
         <h1 className="text-green-400 uppercase my-4">I'm</h1>
         <h1 className="text-green-400 uppercase">Isaiah</h1>
       </div>
-      <p className="text-center text-white">Tap anywhere</p>
+      <p className="text-center text-white lg:hidden">Tap anywhere</p>
 
     </section>
   );
