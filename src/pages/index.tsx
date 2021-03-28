@@ -15,7 +15,6 @@ const NewIndexPage = () => {
         <div className="flex-1">
           <hr className="border-gray-400"/>
           <p className="text-white">Portfolio</p>
-          <FontAwesomeIcon className="text-white bg-white" icon="coffee" />
         </div>
         <div className="flex-1">
           <hr className="border-gray-400"/>
