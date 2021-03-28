@@ -1,4 +1,9 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+
+library.add(fab);
 
 // // https://dribbble.com/shots/15291361-Toby-Brancher-Home-Desktop/attachments/7045604?mode=media
 // // https://www.dejan.works/
@@ -10,6 +15,7 @@ const NewIndexPage = () => {
         <div className="flex-1">
           <hr className="border-gray-400"/>
           <p className="text-white">Portfolio</p>
+          <FontAwesomeIcon className="text-white bg-white" icon="coffee" />
         </div>
         <div className="flex-1">
           <hr className="border-gray-400"/>
