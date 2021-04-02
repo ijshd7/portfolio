@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import styled from "styled-components";
 import floating1 from '../images/floatingstl1.png';
 import floatingLogo from '../images/float-logo-teal.png';
@@ -12,7 +13,7 @@ import movet1 from '../images/movetiphone.png';
 import movetLogo from '../images/movetLogoWithIcon.png'
 
 const ProjectsWrapper = styled.section`
-    background: linear-gradient(45deg, #11A49B, #90FC8E) no-repeat center top;
+    background-color: #111827;
     background-size: contain;
     display: inline-block;
     position: relative;
@@ -23,8 +24,9 @@ const ProjectsWrapper = styled.section`
 const Projects = () => (
     <ProjectsWrapper>
         <div className="mt-6 text-center text-white font-mono antialiased">
-            <h1 style={{fontSize: "8vh"}} className="mb-10">PROFESSIONAL PROJECTS</h1>
-            <div className="flex-col lg:flex lg:flex-row mb-4">
+            <h1 className="mx-auto text-3xl">PROFESSIONAL PROJECTS</h1>
+            <Link to="/" className="underline text-white hover:text-green-400 transition-all duration-300 ease-linear">back</Link>
+            <div className="flex-col lg:flex lg:flex-row mt-4 mb-4">
                 <div className="w-2/3 mb-6 lg:w-1/4 mx-auto">
                     <div className="relative">
                         <img className="rounded-lg hover:opacity-50 transition-all duration-300 ease-linear" src={floating1} alt="Floating STL screenshot"/>
