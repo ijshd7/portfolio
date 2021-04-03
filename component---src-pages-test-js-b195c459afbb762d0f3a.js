@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[13],{h5Py:function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),c=n.n(a);t.default=function(){return c.a.createElement("section",{className:"h-screen w-full flex"},c.a.createElement("h1",{className:"pt-36 mx-auto text-yellow-500"},"HELLO WORLD LOL"))}}}]);
+//# sourceMappingURL=component---src-pages-test-js-b195c459afbb762d0f3a.js.map
