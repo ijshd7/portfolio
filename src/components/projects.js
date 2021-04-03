@@ -28,8 +28,11 @@ const Projects = () => (
             <Link to="/" className="underline text-white hover:text-green-400 transition-all duration-300 ease-linear">back</Link>
             <div className="flex-col lg:flex lg:flex-row mt-4 mb-4">
                 <div className="w-2/3 mb-6 lg:w-1/4 mx-auto">
-                    <div className="relative">
-                        <img className="rounded-lg hover:opacity-50 transition-all duration-300 ease-linear" src={floating1} alt="Floating STL screenshot"/>
+                    <div className="relative group">
+                        <img className="rounded-lg group-hover:opacity-50 transition-all duration-300 ease-linear" src={floating1} alt="Floating STL screenshot"/>
+                        <p className="hidden lg:block -mt-12 my-8 text-3xl text-transparent group-hover:text-green-400">
+                            Enter the Void
+                        </p>
                     </div>
                     <a className="" href="https://www.floatingstl.com/" target="_blank" aria-label="Floating STL" rel="noreferrer">
                         <img className="mt-4 w-1/2 mx-auto" src={floatingLogo} alt="Floating STL logo"/>

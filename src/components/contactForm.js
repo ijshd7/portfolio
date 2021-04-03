@@ -6,7 +6,7 @@ const ContactForm = () => {
       submitting: false,
       status: null
     });
-    const handleServerResponse = (ok: any, msg: any, form: any) => {
+    const handleServerResponse = (ok, msg, form) => {
       setServerState({
         submitting: false,
         status: { ok, msg }
@@ -25,7 +25,7 @@ const ContactForm = () => {
         data: new FormData(form)
       })
         .then(() => {
-          handleServerResponse(true, "Thanks!", form);
+          handleServerResponse(true, <p className="text-green-400">Thanks!</p>, form);
         })
         .catch(r => {
           handleServerResponse(false, r.response.data.error, form);
@@ -33,7 +33,7 @@ const ContactForm = () => {
     };
     return (
       <>
-        <h1 className="text-center font-sans text-5xl font-thin mt-6 mb-6">Want to know more? Let&apos;s Chat!</h1>
+        <h1 className="text-center font-sans text-green-400 text-5xl font-thin mt-6 mb-6">Want to know more? Let&apos;s Chat!</h1>
         <div className="text-center m-auto flex justify-center align-middle w-3/5">
             <form
               className="w-full max-w-sm"
@@ -44,7 +44,7 @@ const ContactForm = () => {
                   <label
                     htmlFor="inputEmail"
                     required="required"
-                    className="block text-green-700 font-bold md:text-right mb-1 md:mb-0 pr-4"
+                    className="block text-green-400 font-bold md:text-right mb-1 md:mb-0 pr-4"
                   >
                     Email address
                   </label>
@@ -65,7 +65,7 @@ const ContactForm = () => {
                 <div className="md:w-1/3">
                     <label
                       htmlFor="inputName"
-                      className="block text-green-700 font-bold md:text-right mb-1 md:mb-0 pr-4"
+                      className="block text-green-400 font-bold md:text-right mb-1 md:mb-0 pr-4"
                     >
                       Name
                     </label>
@@ -84,18 +84,18 @@ const ContactForm = () => {
               </div>
               <div className="md:flex md:items-center mb-4">
                   <label
-                    className="font-sans text-xl font-light md:w-2/3"
+                    className="font-sans text-xl text-green-400 font-semibold md:w-2/3"
                     htmlFor="formControlSelect"
                   >
                     What should we talk about?
                   </label>
-                  <select className="text-green-700 font-extrabold outline-none" id="formControlSelect" name="platform" required="required">
+                  <select className="text-green-400 font-extrabold outline-none bg-transparent" id="formControlSelect" name="platform" required="required">
                     <option>Web Development</option>
                     <option>Suggestions</option>
                     <option>I like your site!</option>
                   </select>
               </div>
-              <button type="submit" className="mt-4 mb-8 text-lg text-green-700 bg-white border border-green-700 hover:border-transparent hover:bg-green-500 hover:text-white font-bold py-2 px-4 rounded-full"  disabled={serverState.submitting}>
+              <button type="submit" className="mt-4 mb-8 text-lg text-green-700 bg-transparent border border-green-700 hover:border-transparent hover:bg-green-500 hover:text-white font-bold py-2 px-4 rounded-full"  disabled={serverState.submitting}>
                   Submit
               </button>
               {serverState.status && (

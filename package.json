@@ -2,13 +2,10 @@
   "name": "isaiah-sherrill-portfolio",
   "private": false,
   "description": "Isaiah's Portfolio Website",
-  "version": "1.0.5",
+  "version": "2.0.0",
   "author": "Isaiah Sherrill",
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.34",
-    "@fortawesome/free-brands-svg-icons": "^5.15.2",
-    "@fortawesome/free-solid-svg-icons": "^5.15.2",
-    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@reach/dialog": "^0.14.0",
     "@tailwindcss/postcss7-compat": "^2.0.2",
     "autoprefixer": "^9.8.6",
     "axios": "^0.21.1",
@@ -32,9 +29,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "react-transition-group": "^4.4.1",
     "styled-components": "^5.2.1",
-    "tailwind.macro": "^0.5.10",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
   },
   "devDependencies": {
