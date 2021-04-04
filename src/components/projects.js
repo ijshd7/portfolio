@@ -100,8 +100,8 @@ const Projects = () => (
                     <div className="relative">
                         <img className="sm:h-1/3 lg:h-2/3 mx-auto rounded-lg mb-2" src={movet1} alt="Movet screenshot"/>
                         <ProjectModal
-                            contributions="Rebuilding site to utilize newer technologies"
-                            technologies="React, GatsbyJS, Styled Components, TailwindCSS"
+                            contributions="Added new functionality/integrations, dependency updates, debugging"
+                            technologies="React Native, Android Studio, XCode, Firebase"
                         />
                     </div>
                     <a href="https://movetcare.com/" target="_blank" aria-label="Movet On Demand Pet Services" rel="noreferrer">
