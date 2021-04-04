@@ -4,6 +4,9 @@ import { Link } from 'gatsby';
 const NewIndexPage = () => {
   return (
     <section className="h-screen w-full flex flex-col bg-gray-900 font-serif">
+      <div className="text-center mt-8 lg:hidden">
+        <Link to="/projects/" className="text-center text-white hover:text-green-400 transition-all duration-300 ease-linear lg:hidden">Projects</Link>
+      </div>
       <div className="hidden lg:inline-flex space-x-20 pt-8 mx-8">
         <div className="flex-1 group">
           <hr className="border-gray-400 group-hover:border-green-400 transition-all duration-300 ease-linear"/>
@@ -19,8 +22,6 @@ const NewIndexPage = () => {
         <h1 className="text-green-400 uppercase my-4">I'm</h1>
         <h1 className="text-green-400 uppercase">Isaiah</h1>
       </div>
-      <Link to="/projects/" className="text-center text-white lg:hidden">Projects</Link>
-
     </section>
   );
 }

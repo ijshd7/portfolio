@@ -95,7 +95,7 @@ const ContactForm = () => {
                     <option>I like your site!</option>
                   </select>
               </div>
-              <button type="submit" className="mt-4 mb-8 text-lg text-green-700 bg-transparent border border-green-700 hover:border-transparent hover:bg-green-500 hover:text-white font-bold py-2 px-4 rounded-full"  disabled={serverState.submitting}>
+              <button type="submit" className="mt-4 mb-8 text-lg text-green-700 bg-transparent border border-green-700 hover:border-transparent hover:bg-green-500 hover:text-white font-bold py-2 px-4 rounded-full transition-all duration-300 ease-linear" disabled={serverState.submitting}>
                   Submit
               </button>
               {serverState.status && (
