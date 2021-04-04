@@ -29,7 +29,7 @@ const ProjectModal = ({ contributions, technologies }) => {
     const close = () => setShowProject(false);
 
     return (
-        <div>
+        <div className="my-2">
             <button className="text-white focus:outline-none cursor-pointer no-underline hover:text-green-400 transition-all duration-300 ease-linear" onClick={open}>Learn more</button>
             <Dialog className="flex flex-col text-center" isOpen={showProject} onDismiss={close}>
                 <p className="text-black"><span className="underline text-green-400">Contributions:</span> {contributions}</p>
@@ -48,7 +48,7 @@ const Projects = () => (
             <div className="flex-col lg:flex lg:flex-row mt-4 mb-4">
                 <div className="w-2/3 mb-6 lg:w-1/4 mx-auto">
                     <div className="relative">
-                        <img className="rounded-lg mb-2" src={floating1} alt="Floating STL screenshot"/>
+                        <img className="rounded-lg" src={floating1} alt="Floating STL screenshot"/>
                         <ProjectModal
                             contributions="Theme customization, plugin integration, gravity forms, advanced custom fields"
                             technologies="WordPress, HTML, CSS, JavaScript, PHP"
@@ -60,7 +60,7 @@ const Projects = () => (
                 </div>
                 <div className="w-2/3 mb-6 lg:w-1/4 mx-auto">
                     <div className="relative">
-                        <img className="rounded-lg mb-2" src={dogwood1} alt="Dogwood Compliance screenshot"/>
+                        <img className="rounded-lg" src={dogwood1} alt="Dogwood Compliance screenshot"/>
                         <ProjectModal
                             contributions="Rebuilding site to utilize newer technologies"
                             technologies="React, GatsbyJS, Styled Components, TailwindCSS, Node, GraphQL, Firebase, Sanity.io"
@@ -72,7 +72,7 @@ const Projects = () => (
                 </div>
                 <div className="w-2/3 lg:w-1/4 mx-auto">
                     <div className="relative">
-                        <img className="rounded-lg mb-2" src={rise1} alt="Rise Float Gathering screenshot"/>
+                        <img className="rounded-lg" src={rise1} alt="Rise Float Gathering screenshot"/>
                         <ProjectModal
                             contributions="Rebuilding site to utilize newer technologies"
                             technologies="React, GatsbyJS, Styled Components, TailwindCSS"
@@ -86,7 +86,7 @@ const Projects = () => (
             <div className="flex-col lg:flex lg:flex-row mt-6">
                 <div className="w-2/3 lg:w-1/3 mx-auto mb-6">
                     <div className="relative">
-                        <img className="rounded-lg mb-2" src={coach1} alt="Elevated Coaching screenshot"/>
+                        <img className="rounded-lg" src={coach1} alt="Elevated Coaching screenshot"/>
                         <ProjectModal
                             contributions="Integrated new features, functionality, and provided client support & education"
                             technologies="React, GatsbyJS, Styled Components, TailwindCSS, TypeScript, Firebase, Gitlab CI"
@@ -98,7 +98,7 @@ const Projects = () => (
                 </div>
                 <div className="w-2/3 lg:w-1/3 mx-auto mb-6">
                     <div className="relative">
-                        <img className="sm:h-1/3 lg:h-2/3 mx-auto rounded-lg mb-2" src={movet1} alt="Movet screenshot"/>
+                        <img className="sm:h-1/3 lg:h-2/3 mx-auto rounded-lg" src={movet1} alt="Movet screenshot"/>
                         <ProjectModal
                             contributions="Added new functionality/integrations, dependency updates, debugging"
                             technologies="React Native, Android Studio, XCode, Firebase"

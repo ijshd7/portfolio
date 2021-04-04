@@ -5,7 +5,7 @@ const NewIndexPage = () => {
   return (
     <section className="h-screen w-full flex flex-col bg-gray-900 font-serif">
       <div className="text-center mt-8 lg:hidden">
-        <Link to="/projects/" className="text-center text-white hover:text-green-400 transition-all duration-300 ease-linear lg:hidden">Projects</Link>
+        <Link to="/projects/" className="underline text-center text-white hover:text-green-400 transition-all duration-300 ease-linear lg:hidden">Projects</Link>
       </div>
       <div className="hidden lg:inline-flex space-x-20 pt-8 mx-8">
         <div className="flex-1 group">
